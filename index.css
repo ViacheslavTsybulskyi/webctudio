@@ -1,0 +1,173 @@
+a {
+    text-decoration: none;
+}
+
+.header-logo { 
+   font-family: 'Raleway';
+font-weight: 700;
+font-size: 26px;
+line-height: 1.19;
+letter-spacing: 0.03em;
+color: #000000;
+}
+
+.logo-color {
+    color: #2196F3;
+}
+
+.header-link {    
+    font-family: 'Roboto';
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color: #212121;
+}
+
+.header-link:hover{
+    color: #2196F3;
+}
+
+.contacts-link {    
+    font-family: 'Roboto';
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.02em;
+color: #757575;
+}
+
+.contacts-link:hover {  
+    color: #2196F3
+}
+
+.features-text {
+    font-family: 'Roboto';
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #212121;
+}
+
+.features-description{  
+    font-family: 'Roboto';
+font-weight: 400;
+font-size: 14px;
+line-height:1.71;
+letter-spacing: 0.03em;
+color: #757575;
+}
+
+.main-name{
+    font-family: 'Roboto';
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;  
+}
+
+.main-button{
+    
+font-family: 'Roboto';
+font-weight: 700;
+font-size: 16px;
+line-height: 1.87;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
+color: #FFFFFF;
+
+}
+
+.team-title {
+    font-family: 'Roboto';
+font-weight: 700;
+font-size: 36px;
+line-height: 1.16;
+text-align: center;
+letter-spacing: 0.03em;
+color: #212121;
+}
+
+.work-text { 
+    font-family: 'Roboto';
+font-weight: 700;
+font-size: 36px;
+line-height: 42px;
+text-align: center;
+letter-spacing: 0.03em;
+color: #212121;
+}
+
+.team-title {
+    font-family: 'Roboto';
+font-weight: 700;
+font-size: 36px;
+line-height: 42px;
+text-align: center;
+letter-spacing: 0.03em;
+color: #212121;
+}
+
+.team-name{
+    font-family: 'Roboto';
+font-weight: 500;
+font-size: 16px;
+line-height: 1.18;
+text-align: center;
+letter-spacing: 0.03em;
+color: #212121;
+}
+
+.team-description{
+    font-family: 'Roboto';
+font-weight: 400;
+font-size: 16px;
+line-height: 1.18;
+text-align: center;
+letter-spacing: 0.03em;
+color: #757575;
+}
+
+.footer-logo{
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+
+.footer-color{
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #2196F3;
+}
+
+
+.footer-address{
+    font-family: 'Roboto';
+font-weight: 400;
+font-size: 14px;
+line-height: 1.17;
+letter-spacing: 0.03em;
+color: #FFFFFF;
+}
+
+.footer-link{
+    font-family: 'Roboto';
+font-weight: 400;
+font-size: 14px;
+line-height: 1.17;
+letter-spacing: 0.03em;
+color: rgba(255, 255, 255, 0.6);
+}

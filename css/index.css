@@ -1,3 +1,7 @@
+body {  
+    font-family: 'Roboto';
+}
+
 a {
     text-decoration: none;
 }
@@ -16,7 +20,6 @@ a {
 }
 
 .header-link {
-    font-family: 'Roboto';
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -29,7 +32,6 @@ a {
 }
 
 .contacts-link {
-    font-family: 'Roboto';
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -42,7 +44,6 @@ a {
 }
 
 .features-text {
-    font-family: 'Roboto';
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -52,7 +53,6 @@ a {
 }
 
 .features-description {
-    font-family: 'Roboto';
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -61,7 +61,6 @@ a {
 }
 
 .main-name {
-    font-family: 'Roboto';
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -72,8 +71,6 @@ a {
 }
 
 .main-button {
-
-    font-family: 'Roboto';
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
@@ -82,11 +79,9 @@ a {
     text-align: center;
     letter-spacing: 0.06em;
     color: #FFFFFF;
-
 }
 
 .team-title {
-    font-family: 'Roboto';
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -96,7 +91,6 @@ a {
 }
 
 .work-text {
-    font-family: 'Roboto';
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -106,7 +100,6 @@ a {
 }
 
 .team-title {
-    font-family: 'Roboto';
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -116,7 +109,6 @@ a {
 }
 
 .team-name {
-    font-family: 'Roboto';
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
@@ -126,7 +118,6 @@ a {
 }
 
 .team-description {
-    font-family: 'Roboto';
     font-weight: 400;
     font-size: 16px;
     line-height: 1.18;
@@ -155,7 +146,6 @@ a {
 
 
 .footer-address {
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -165,7 +155,6 @@ a {
 }
 
 .footer-link {
-    font-family: 'Roboto';
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;

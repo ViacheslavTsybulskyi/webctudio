@@ -127,22 +127,22 @@ img {
 
 .first-text::before {
     content: "";
-    background-image: url(../img/8.webp);
+    background-image: url(./img/features-antenna.webp);
 }
 
 .second-text::before {
         content: "";
-        background-image: url(../img/9.webp);
+        background-image: url(./img/features-clock.webp);
 }
 
 .third-text::before {
     content: "";
-    background-image: url(../img/10.webp);
+    background-image: url(./img/features-computer.webp);
 }
 
 .fourth-text::before {  
     content: "";
-    background-image: url(../img/11.webp);
+    background-image: url(./img/features-man.webp);
 }
 
 .features-list {    
@@ -169,7 +169,7 @@ img {
 }
 
 .main-section{  
-    background:linear-gradient(to right, rgba(47, 48, 58, 0.40) 40%, rgba(47, 48, 58, 0.40) 40%)  , url(../img/12.webp);
+    background:linear-gradient(to right, rgba(47, 48, 58, 0.40) 40%, rgba(47, 48, 58, 0.40) 40%)  , url(./img/main-bg.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

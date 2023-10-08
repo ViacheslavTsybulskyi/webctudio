@@ -54,12 +54,9 @@ body {
     color: #212121;
 }
 
-.header-link:hover {
+.header-link:hover , .header-link:focus {
     color: #2196F3;
-}
-
-.header-link:focus {
-    color: #2196F3;
+    
 }
 
 .contacts-link {
@@ -74,15 +71,13 @@ body {
 }
 
 .contacts-link:focus {
+    
     color: #2196F3;
 }
 
-.contacts-link:hover .contacts-icon-envelope {
+.contacts-link:hover .contacts-icon-envelope , .contacts-link:focus .contacts-icon-envelope {
     fill: #2196F3;
-}
-
-.contacts-link:focus .contacts-icon-envelope {
-    fill: #2196F3;
+   
 }
 
 .contacts-icon-envelope {
@@ -97,16 +92,14 @@ body {
     fill: #757575;
 }
 
-.contacts-link:hover .contacts-icon-smartphone {
+.contacts-link:hover .contacts-icon-smartphone , .contacts-link:focus .contacts-icon-smartphone {
     fill: #2196F3;
-}
-
-.contacts-link:focus .contacts-icon-smartphone {
-    fill: #2196F3;
+    
 }
 
 .contacts-link:hover {
-    color: #2196F3
+    color: #2196F3;
+    
 }
 
 
@@ -131,7 +124,8 @@ padding: 6px 25px;
 }
 
 .main-button:hover ,  .main-button:focus {
-font-weight: 500;
+    color: #FFF;
+    font-weight: 500;
 font-size: 16px;
 line-height: 1.62;
 text-align: center;
@@ -149,13 +143,21 @@ box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0
     gap: 30px;
 }
 
+.card-link {
+    display: block;
+}
+
+.card-link:hover , .card-link:focus {
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
+
 .card-item {    
     flex-basis: calc( (100% - 60px) / 3);
 }
 
-.card-item:hover , .card-item:focus {  
+/* .card-item:hover {  
     box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
-}
+} */
 
 .card-img{  
     margin-bottom: 20px;
@@ -268,6 +270,7 @@ text-transform: uppercase;
 
 .social-link:hover , .social-link:focus {
     background-color: #2196F3;
+    
 }
 
 .social-icon {

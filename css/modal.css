@@ -16,20 +16,19 @@
    .no-scroll {
     overflow: hidden;
    }
-   
- 
-.modal { 
+
+.modal-container {
+    max-width: 528px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: white;
-    padding-bottom: 40px;}
-
-.modal-container {
-    max-width: 528px;
-    margin-left: auto;
-    margin-right: auto;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 40px;
+    position: relative;
 }
 
 .modal-close {
@@ -39,9 +38,9 @@
     border: 1px  solid rgba(0, 0, 0, 0.10);
     border-radius: 50%;
     background-color: #FFF;
-    margin-left: 490px;
-    margin-top: 8px;
-    margin-right: 8px;
+    position: absolute;
+    top: 8px;
+    right: 8px;
 }
 
 .close-icon {
@@ -97,7 +96,6 @@ justify-content: center;
 .modal-box {
 display: flex;
 flex-direction: column;
-margin-left: 40px;
 margin-top: 10px;
 }
 

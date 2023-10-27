@@ -91,7 +91,9 @@
           <!-- main -->
 
           <h1 class="main-name">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
-          <button data-modal-open class="main-button" type="button">Замовити послугу</button>
+          <button data-modal-open class="main-button" type="button">
+            Замовити послугу
+          </button>
         </div>
       </section>
       <section class="features-section">
@@ -178,7 +180,6 @@
               <img
                 class="team-img"
                 src="./img/4.webp"
-                width="300"
                 alt="Product Designer"
               />
               <p class="team-name">Ігор Дем'яненко</p>
@@ -219,7 +220,6 @@
               <img
                 class="team-img"
                 src="./img/5.webp"
-                width="300"
                 alt="Frontend Developer"
               />
               <p class="team-name">Ольга Рєпіна</p>
@@ -260,7 +260,6 @@
               <img
                 class="team-img"
                 src="./img/6.webp"
-                width="300"
                 alt="Marketing"
               />
               <p class="team-name">Микола Тарасов</p>
@@ -485,7 +484,6 @@
     <!-- modal window -->
 
     <div data-modal class="backdrop is-hidden">
-      <div class="modal">
       <div class="modal-container">
         <button data-modal-close type="button" class="modal-close">
           <svg class="close-icon">
@@ -502,7 +500,7 @@
               </svg>
 
               <label class="modal-lable" for="modal-name">Ім'я</label>
-              <input class="modal-input" id="modal-name" type="text" />
+              <input class="modal-input" id="modal-name" required type="text" />
             </li>
             <li class="form-item">
               <svg class="modal-icon">
@@ -510,7 +508,7 @@
               </svg>
 
               <label class="modal-lable" for="modal-phone">Телефон</label>
-              <input class="modal-input" id="modal-phone" type="text" />
+              <input class="modal-input" id="modal-phone" required type="tel" />
             </li>
             <li class="form-item">
               <svg class="modal-icon">
@@ -518,7 +516,12 @@
               </svg>
 
               <label class="modal-lable" for="modal-mail">Пошта</label>
-              <input class="modal-input" id="modal-mail" type="text" />
+              <input
+                class="modal-input"
+                id="modal-mail"
+                required
+                type="email"
+              />
             </li>
           </ul>
 
@@ -533,7 +536,7 @@
           </div>
 
           <div class="checkbox-box">
-            <input class="text-input" type="checkbox" />
+            <input class="text-input" required type="checkbox" />
             <label class="form-text">
               Погоджуюся з розсилкою та приймаю
               <a class="modal-link" href="#">Умови договору</a>
@@ -543,7 +546,6 @@
           <button class="modal-button" type="submit">Відправити</button>
         </form>
       </div>
-    </div>
     </div>
     <script src="./js/modal.js"></script>
   </body>

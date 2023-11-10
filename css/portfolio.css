@@ -11,6 +11,7 @@ body {
     margin-right: auto;
 }
 
+
 .header-logo {
     font-family: 'Raleway';
     font-weight: 700;
@@ -35,7 +36,8 @@ body {
     margin-left: 93px;
     gap: 50px;
     padding-top: 32px;
-    padding-bottom: 32px;
+    /* padding-bottom: 32px; */
+    position: relative;
 }
 
 .contacts-list{
@@ -52,6 +54,9 @@ body {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: #212121;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-portfolio {
@@ -63,16 +68,23 @@ body {
 
 .link-portfolio::after {
     content: '';
-    width: 74px;
+    width: 72px;
     height: 4px;
     border-radius: 2px;
     background-color: #2196F3;  
+    cursor: default;
+    position: absolute;
+    bottom: 0;
+    left: 98;
 }
+
 
 .header-link:hover , .header-link:focus {
     color: #2196F3;
     
 }
+
+/* contacts  */
 
 .contacts-link {
     font-weight: 500;
@@ -83,11 +95,9 @@ body {
     display: flex;
     gap: 10px;
     align-items: center;
-}
-
-.contacts-link:focus {
-    
-    color: #2196F3;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-link:hover .contacts-icon-envelope , .contacts-link:focus .contacts-icon-envelope {
@@ -99,12 +109,18 @@ body {
     width: 16px;
     height: 12px;
     fill: #757575;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-icon-smartphone {
     width: 10px;
     height: 16px;
     fill: #757575;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-link:hover .contacts-icon-smartphone , .contacts-link:focus .contacts-icon-smartphone {
@@ -112,11 +128,12 @@ body {
     
 }
 
-.contacts-link:hover {
+.contacts-link:hover, .contacts-link:focus {
     color: #2196F3;
-    
+   
 }
 
+/* main  */
 
 .main-list {    
  display: flex;
@@ -136,15 +153,13 @@ body {
 border-radius: 4px;
 background-color: #F5F4FA;
 padding: 6px 25px;
+transition-property: background, color, box-shadow;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .main-button:hover ,  .main-button:focus {
     color: #FFF;
-    font-weight: 500;
-font-size: 16px;
-line-height: 1.62;
-text-align: center;
-letter-spacing: 0.03em;
 background-color: #2196F3;
 box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 
@@ -163,16 +178,15 @@ box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0
     overflow: hidden;
 }
 
-.card-link:hover , .card-link:focus {
-    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
-}
-
 .card-item {    
     flex-basis: calc( (100% - 60px) / 3);
     position: relative;
     overflow: hidden;
     border: 1px solid #EEE;
     background: #FFF;
+    transition-property: box-shadow,;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card-item:hover {  

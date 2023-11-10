@@ -19,6 +19,15 @@ img {
 
 /* header */
 
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 1000;
+}
+
 .header-logo {
     font-family: 'Raleway';
     font-weight: 700;
@@ -62,7 +71,7 @@ img {
     letter-spacing: 0.02em;
     color: #212121;
     transition-property: color;
-    transition-duration: 250ms;
+    transition-duration: 1000ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -81,6 +90,13 @@ img {
     left: 0;
     right: 0;
     cursor: default;
+    transition-property: transform;
+    transition-duration: 200ms;
+    transform: scale(0);
+    }
+
+    .link-studio:hover::after {
+        transform: scale(1);
     }
 
 .header-link:hover , .header-link:focus {
@@ -198,6 +214,10 @@ img {
     color: #757575;
 }
 
+.main {
+    padding-top: 80px;
+}
+
 .main-section{  
     background: linear-gradient(to right, rgba(47, 48, 58, 0.40) 40%, rgba(47, 48, 58, 0.40) 40%)  , url(/img/main-bg.webp);
     background-repeat: no-repeat;
@@ -243,6 +263,12 @@ border-radius: 4px;
 margin-top: 30px;
 width: 216px;
 height: 50px;
+transition-property: background;
+transition-duration: 250ms;
+}
+
+.main-button:hover, .main-button:focus {
+background-color: rgb(46, 115, 171);
 }
 
 .team-title {

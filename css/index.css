@@ -71,7 +71,7 @@ img {
     letter-spacing: 0.02em;
     color: #212121;
     transition-property: color;
-    transition-duration: 1000ms;
+    transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -90,14 +90,52 @@ img {
     left: 0;
     right: 0;
     cursor: default;
+    /* transition-property: transform;
+    transition-duration: 200ms;
+    transform: scale(0); */
+    }
+
+    /* .link-studio:hover::after {
+        transform: scale(1);
+    } */
+    
+.link-portfolio::after {
+    content: '';
+    width: 72px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #2196F3;  
+    cursor: default;
+    position: absolute;
+    bottom: 0;
+    right: 114px;
     transition-property: transform;
     transition-duration: 200ms;
     transform: scale(0);
-    }
+}
 
-    .link-studio:hover::after {
-        transform: scale(1);
-    }
+.link-portfolio:hover::after {
+    transform: scale(1);
+}
+
+.link-contacts::after {
+     content: '';
+    width: 64px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #2196F3;  
+    cursor: default;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition-property: transform;
+    transition-duration: 200ms;
+    transform: scale(0);
+}
+
+.link-contacts:hover::after {
+    transform: scale(1);
+}
 
 .header-link:hover , .header-link:focus {
     color: #2196F3;
@@ -173,22 +211,22 @@ img {
 
 .first-text::before {
     content: "";
-    background-image: url(/img/features-antenna.webp);
+    background-image: url(./img/features-antenna.webp);
 }
 
 .second-text::before {
         content: "";
-        background-image: url(/img/features-clock.webp);
+        background-image: url(./img/features-clock.webp);
 }
 
 .third-text::before {
     content: "";
-    background-image: url(/img/features-computer.webp);
+    background-image: url(./img/features-computer.webp);
 }
 
 .fourth-text::before {  
     content: "";
-    background-image: url(/img/features-man.webp);
+    background-image: url(./img/features-man.webp);
 }
 
 .features-list {    
@@ -219,7 +257,7 @@ img {
 }
 
 .main-section{  
-    background: linear-gradient(to right, rgba(47, 48, 58, 0.40) 40%, rgba(47, 48, 58, 0.40) 40%)  , url(/img/main-bg.webp);
+    background: linear-gradient(to right, rgba(47, 48, 58, 0.40) 40%, rgba(47, 48, 58, 0.40) 40%)  , url(./img/main-bg.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -256,19 +294,18 @@ img {
     margin-right: auto;
     display: block;
     border: none;
-    cursor: pointer;
 background: #2196F3;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
 margin-top: 30px;
 width: 216px;
 height: 50px;
-transition-property: background;
+transition-property: transform;
 transition-duration: 250ms;
 }
 
 .main-button:hover, .main-button:focus {
-background-color: rgb(46, 115, 171);
+    transform: scale(1.075);
 }
 
 .team-title {
@@ -621,9 +658,12 @@ text-transform: uppercase;
     letter-spacing: 0.48px;
 }
 
+.footer-input:hover { 
+border: 1px solid #2196F3;
+}
+
 .footer-submit {
 display: flex;
-
 border-radius: 4px;
 background: #2196F3;
 box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -633,6 +673,11 @@ padding-bottom: 10px;
 padding-left: 28px;
 padding-right: 28px;
 align-items: center;
+transition: background 250ms, border 250ms;
+}
+
+.footer-submit:hover, .footer-submit:focus {
+background-color: #fff;
 }
 
 .submit-title {
@@ -643,10 +688,20 @@ align-items: center;
     font-weight: 700;
     line-height: 1.87;
     letter-spacing: 0.96px;
+    transition: color 250ms;
+}
+
+.footer-submit:hover .submit-title, .footer-submit:focus .submit-title {
+    color: #2196F3;
 }
 
 .form-icon {
     width: 24px;
     height: 24px;
     fill: #FFF;
+    transition: fill 250ms;
+}
+
+.footer-submit:hover .form-icon, .footer-submit:focus .form-icon {
+    fill: #2196F3;
 }

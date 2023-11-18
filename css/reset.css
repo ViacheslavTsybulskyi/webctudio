@@ -6,6 +6,7 @@ a {
 button {
     outline: none;
     border: none;
+    cursor: pointer;
 }
 
 ul {
@@ -29,4 +30,8 @@ img {
     max-width: 100%;
     width: 100%;
     height: auto;
+}
+
+input {
+    outline: none;
 }

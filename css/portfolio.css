@@ -11,6 +11,16 @@ body {
     margin-right: auto;
 }
 
+/* header  */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 1000;
+}
 
 .header-logo {
     font-family: 'Raleway';
@@ -59,6 +69,27 @@ body {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.link-studio::after {
+    content: '';
+    border-radius: 2px;
+    background-color: #2196F3;  
+    width: 48px;
+    height: 4px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    cursor: default;
+    transition-property: transform;
+    transition-duration: 200ms;
+    transform: scale(0);
+    }
+
+    .link-studio:hover::after {
+        transform: scale(1);
+    }
+
+    
 .link-portfolio {
     color: #2196F3;
     display: flex;
@@ -66,6 +97,7 @@ body {
     gap: 28px;
 }
 
+    
 .link-portfolio::after {
     content: '';
     width: 72px;
@@ -75,9 +107,34 @@ body {
     cursor: default;
     position: absolute;
     bottom: 0;
-    left: 98;
+    right: 114px;
+    /* transition-property: transform;
+    transition-duration: 200ms;
+    transform: scale(0); */
 }
 
+/* .link-portfolio:hover::after {
+    transform: scale(1);
+} */
+
+.link-contacts::after {
+     content: '';
+    width: 64px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #2196F3;  
+    cursor: default;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition-property: transform;
+    transition-duration: 200ms;
+    transform: scale(0);
+}
+
+.link-contacts:hover::after {
+    transform: scale(1);
+}
 
 .header-link:hover , .header-link:focus {
     color: #2196F3;
@@ -133,7 +190,15 @@ body {
    
 }
 
+.header-line {
+    border: 1px solid #ECECEC;
+}
+
 /* main  */
+
+.main {
+    padding-top: 80px;
+}
 
 .main-list {    
  display: flex;
@@ -253,7 +318,6 @@ width: 322px;
 }
 
 /* footer  */
-
 
 .footer-box {
     display: flex;
@@ -389,9 +453,12 @@ text-transform: uppercase;
     letter-spacing: 0.48px;
 }
 
+.footer-input:hover { 
+border: 1px solid #2196F3;
+}
+
 .footer-submit {
 display: flex;
-
 border-radius: 4px;
 background: #2196F3;
 box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -401,6 +468,11 @@ padding-bottom: 10px;
 padding-left: 28px;
 padding-right: 28px;
 align-items: center;
+transition: background 250ms, border 250ms;
+}
+
+.footer-submit:hover, .footer-submit:focus {
+background-color: #fff;
 }
 
 .submit-title {
@@ -411,10 +483,20 @@ align-items: center;
     font-weight: 700;
     line-height: 1.87;
     letter-spacing: 0.96px;
+    transition: color 250ms;
+}
+
+.footer-submit:hover .submit-title, .footer-submit:focus .submit-title {
+    color: #2196F3;
 }
 
 .form-icon {
     width: 24px;
     height: 24px;
     fill: #FFF;
+    transition: fill 250ms;
+}
+
+.footer-submit:hover .form-icon, .footer-submit:focus .form-icon {
+    fill: #2196F3;
 }

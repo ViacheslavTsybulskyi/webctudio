@@ -214,22 +214,18 @@ img {
 }
 
 .first-text::before {
-    content: "";
     background-image: url(./img/features-antenna.webp);
 }
 
 .second-text::before {
-    content: "";
     background-image: url(./img/features-clock.webp);
 }
 
 .third-text::before {
-    content: "";
     background-image: url(./img/features-computer.webp);
 }
 
 .fourth-text::before {
-    content: "";
     background-image: url(./img/features-man.webp);
 }
 

@@ -21,6 +21,7 @@
    }
 
 .modal-container {
+    border-radius: 4px;
     max-width: 528px;
     position: absolute;
     top: 50%;

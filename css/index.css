@@ -214,19 +214,19 @@ img {
 }
 
 .first-text::before {
-    background-image: url(/img/features-antenna.png);
+    background-image: url(./img/features-antenna.png);
 }
 
 .second-text::before {
-    background-image: url(/img/features-clock.png);
+    background-image: url(./img/features-clock.png);
 }
 
 .third-text::before {
-    background-image: url(/img/features-computer.png);
+    background-image: url(./img/features-computer.png);
 }
 
 .fourth-text::before {
-    background-image: url(/img/features-man.png);
+    background-image: url(./img/features-man.png);
 }
 
 .features-list {
@@ -257,7 +257,7 @@ img {
 }
 
 .main-section {
-    background: linear-gradient(to right, rgba(47, 48, 58, 0.40) 40%, rgba(47, 48, 58, 0.40) 40%), url(/img/main-bg.jpg);
+    background: linear-gradient(to right, rgba(47, 48, 58, 0.40) 40%, rgba(47, 48, 58, 0.40) 40%), url(./img/main-bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

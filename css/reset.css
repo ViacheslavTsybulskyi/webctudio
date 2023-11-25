@@ -35,3 +35,10 @@ img {
 input {
     outline: none;
 }
+
+:root {
+    --background-blue: #1296F3;
+    --text-color: #757575;
+    --white: #FFF;
+    --black : #212121;
+}

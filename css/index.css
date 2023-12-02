@@ -114,7 +114,8 @@ img {
     transform: scale(0);
 }
 
-.link-portfolio:hover::after {
+.link-portfolio:hover::after
+.link-portfolio:focus::after {
     transform: scale(1);
 }
 
@@ -133,7 +134,8 @@ img {
     transform: scale(0);
 }
 
-.link-contacts:hover::after {
+.link-contacts:hover::after
+.link-contacts:focus::after {
     transform: scale(1);
 }
 

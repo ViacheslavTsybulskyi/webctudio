@@ -1,9 +1,9 @@
-@import './base/reset.scss';
-@import './base/common.scss';
+@import './base/reset';
+@import './base/common';
 
-@import './components/header.scss';
+@import './sections/portfolioHeader';
 
-@import './sections/heroPortfolio.scss';
-@import './sections/card.scss';
+@import './sections/portfolioHero';
+@import './sections/card.';
 
-@import './components/footer.scss';
+@import './components/footer';

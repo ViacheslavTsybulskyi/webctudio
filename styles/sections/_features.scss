@@ -1,54 +1,54 @@
-.features-section {
+.features {
     padding-top: 94px;
     padding-bottom: 94px;
-}
 
-.features-item::before {
-    content: '';
-    display: block;
-    width: 270px;
-    height: 120px;
-    background-color: rgb(245, 244, 250);
-    background-position: center;
-    background-repeat: no-repeat;
-    margin-bottom: 30px;
-}
+    &__list {
+        display: flex;
+        gap: 30px;
+    }
 
-.first-text::before {
-    background-image: url(../../img/features-antenna.webp);
-}
+    &__item::before {
+        content: '';
+        display: block;
+        width: 270px;
+        height: 120px;
+        background-color: rgb(245, 244, 250);
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-bottom: 30px;
+    }
 
-.second-text::before {
-    background-image: url(../../img/features-clock.webp);
-}
+    &__first::before {
+        background-image: url(../../img/features-antenna.webp);
+    }
+    
+    &__second::before {
+        background-image: url(../../img/features-clock.webp);
+    }
+    
+    &__third::before {
+        background-image: url(../../img/features-computer.webp);
+    }
+    
+    &__fourth::before {
+        background-image: url(../../img/features-man.webp);
+    }
 
-.third-text::before {
-    background-image: url(../../img/features-computer.webp);
-}
+    &__text {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #212121;
+        margin-bottom: 10px;
+    }
 
-.fourth-text::before {
-    background-image: url(../../img/features-man.webp);
-}
-
-.features-list {
-    display: flex;
-    gap: 30px;
-}
-
-.features-text {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #212121;
-    margin-bottom: 10px;
-}
-
-.features-description {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: var(--text-color);
+    &__description {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: var(--text-color);
+    }
 }

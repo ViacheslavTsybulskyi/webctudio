@@ -245,12 +245,15 @@ img {
   transform: scale(1.075);
 }
 
-.features-section {
+.features {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-
-.features-item::before {
+.features__list {
+  display: flex;
+  gap: 30px;
+}
+.features__item::before {
   content: "";
   display: block;
   width: 270px;
@@ -260,29 +263,19 @@ img {
   background-repeat: no-repeat;
   margin-bottom: 30px;
 }
-
-.first-text::before {
+.features__first::before {
   background-image: url(../../img/features-antenna.webp);
 }
-
-.second-text::before {
+.features__second::before {
   background-image: url(../../img/features-clock.webp);
 }
-
-.third-text::before {
+.features__third::before {
   background-image: url(../../img/features-computer.webp);
 }
-
-.fourth-text::before {
+.features__fourth::before {
   background-image: url(../../img/features-man.webp);
 }
-
-.features-list {
-  display: flex;
-  gap: 30px;
-}
-
-.features-text {
+.features__text {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -291,8 +284,7 @@ img {
   color: #212121;
   margin-bottom: 10px;
 }
-
-.features-description {
+.features__description {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;

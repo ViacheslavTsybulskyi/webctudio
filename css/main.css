@@ -292,11 +292,10 @@ img {
   color: var(--text-color);
 }
 
-.work-section {
+.work {
   padding-bottom: 94px;
 }
-
-.work-text {
+.work__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -305,23 +304,19 @@ img {
   color: var(--black);
   margin-bottom: 50px;
 }
-
-.work-list {
+.work__list {
   display: flex;
   gap: 30px;
   justify-content: center;
 }
-
-.work-item {
+.work__item {
   position: relative;
 }
-
-.work-img {
+.work__img {
   width: 370px;
   height: 294px;
 }
-
-.work-title {
+.work__text {
   color: var(--white);
   text-align: center;
   font-family: "Roboto";

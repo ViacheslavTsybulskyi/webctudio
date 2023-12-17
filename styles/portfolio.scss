@@ -1,9 +1,10 @@
 @import './base/reset';
 @import './base/common';
 
-@import './sections/portfolioHeader';
+@import './utils/variable';
+
+@import './components/header';
 
 @import './sections/portfolioHero';
-@import './sections/card';
 
 @import './components/footer';

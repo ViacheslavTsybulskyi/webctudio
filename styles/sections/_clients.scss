@@ -3,7 +3,7 @@
     padding-bottom: 94px;
 
     &__title {
-        color: var(--black);
+        color: $black;
         text-align: center;
         font-family: 'Roboto';
         font-size: 36px;
@@ -37,7 +37,7 @@
     &__link:hover,
     &__link:focus {
     border-radius: 4px;
-    border: 1px solid var(--background-blue);
+    border: 1px solid $background-blue;
     }
 
     &__icon {
@@ -51,6 +51,6 @@
 
     &__link:hover &__icon,
     &__link:focus &__icon {
-    fill: var(--background-blue);
+    fill: $background-blue;
     }
 }

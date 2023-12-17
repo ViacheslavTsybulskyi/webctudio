@@ -18,7 +18,7 @@
     }
 
     &__logo-color {
-        color: var(--background-blue);
+        color: $background-blue;
     }
 
     &__nav {
@@ -47,12 +47,12 @@
 
     &__page:hover,
     &__page:focus {
-    color: var(--background-blue);
+    color: $background-blue;
     }
 
-    &__studio-page {
-        color: var(--background-blue);
-    }
+    /* &__studio-page {
+         color: $background-blue;
+     }
 
     /* &__studio-page:hover::after {
         transform: scale(1);
@@ -63,7 +63,7 @@
         width: 72px;
         height: 4px;
         border-radius: 2px;
-        background-color: var(--background-blue);
+        background-color: $background-blue;
         cursor: default;
         position: absolute;
         bottom: 0;
@@ -83,7 +83,7 @@
         width: 64px;
         height: 4px;
         border-radius: 2px;
-        background-color: var(--background-blue);
+        background-color: $background-blue;
         cursor: default;
         position: absolute;
         bottom: 0;
@@ -111,7 +111,7 @@
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.02em;
-        color: var(--text-color);
+        color: $text-color;
         display: flex;
         gap: 10px;
         align-items: center;
@@ -122,13 +122,13 @@
     
     &__contacts-link:hover,
     &__contacts-link:focus {
-    color: var(--background-blue);
+    color: $background-blue;
     }
 
     &__contacts-envelope {
         width: 16px;
         height: 12px;
-        fill: var(--text-color);
+        fill: $text-color;
         transition-property: fill;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -136,13 +136,13 @@
 
     &__contacts-link:hover &__contacts-envelope,
     &__contacts-link:focus &__contacts-envelope {
-        fill: var(--background-blue);
+        fill: $background-blue;
     }
     
     &-contacts-smartphone {
         width: 10px;
         height: 16px;
-        fill: var(--text-color);
+        fill: $text-color;
         transition-property: fill;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -150,7 +150,7 @@
 
     &__contacts-link:hover &-contacts-smartphone,
     &__contacts-link:focus &-contacts-smartphone {
-    fill: var(--background-blue);
+    fill: $background-blue;
     }
 
 }

@@ -1,7 +1,9 @@
 @import './base/reset';
 @import './base/common';
 
-@import './sections/mainHeader';
+@import './utils/variable';
+
+@import './components/header';
 
 @import './sections/mainHero';
 @import './sections/features';

@@ -18,7 +18,7 @@
         font-size: 26px;
         line-height: 1.19;
         letter-spacing: 0.03em;
-        color: var(--white);
+        color: $white;
     }
     
     &__logo-color {
@@ -27,7 +27,7 @@
         font-size: 26px;
         line-height: 1.19;
         letter-spacing: 0.03em;
-        color: var(--background-blue);
+        color: $background-blue;
     }
 
     &__address {
@@ -36,7 +36,7 @@
         font-size: 14px;
         line-height: 1.17;
         letter-spacing: 0.03em;
-        color: var(--white);
+        color: $white;
         margin-top: 20px;
     }
 
@@ -54,7 +54,7 @@
     }
 
     &__social-title {
-        color: var(--white);
+        color: $white;
         font-family: 'Roboto';
         font-size: 14px;
         font-weight: 700;
@@ -84,13 +84,13 @@
 
     &__social-link:hover,
     &__social-link:focus {
-    background-color: var(--background-blue);
+    background-color: $background-blue;
     }
 
     &__social-icon {
         width: 20px;
         height: 20px;
-        fill: var(--white);
+        fill: $white;
     }
 
     &__form {
@@ -98,7 +98,7 @@
     }
 
     &__lable {
-        color: var(--white);
+        color: $white;
         font-size: 14px;
         font-weight: 700;
         line-height: normal;
@@ -133,13 +133,13 @@
     }
 
     &__input:hover {
-        border: 1px solid var(--background-blue);
+        border: 1px solid $background-blue;
     }
 
     &__submit {
         display: flex;
         border-radius: 4px;
-        background: var(--background-blue);
+        background: $background-blue;
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
         gap: 10px;
         padding-top: 10px;
@@ -152,11 +152,11 @@
 
     &__submit:hover,
     &__submit:focus {
-    background-color: var(--white);
+    background-color: $white;
     }
 
     &__submit-title {
-        color: var(--white);
+        color: $white;
     
         text-align: center;
         font-size: 16px;
@@ -168,18 +168,18 @@
 
     &__submit:hover &__submit-title,
     &__submit:focus &__submit-title {
-    color: var(--background-blue);
+    color: $background-blue;
     }
 
     &__form-icon {
         width: 24px;
         height: 24px;
-        fill: var(--white);
+        fill: $white;
         transition: fill 250ms;
     }
 
     &__submit:hover &__form-icon,
     &__submit:focus &__form-icon {
-    fill: var(--background-blue);
+    fill: $background-blue;
     }
 }

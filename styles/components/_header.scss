@@ -18,7 +18,7 @@
     }
 
     &__logo-color {
-        color: $background-blue;
+        color: $color-blue;
     }
 
     &__nav {
@@ -39,7 +39,7 @@
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.02em;
-        color: #212121;
+        color: $black;
         transition-property: color;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -47,11 +47,11 @@
 
     &__page:hover,
     &__page:focus {
-    color: $background-blue;
+    color: $color-blue;
     }
 
     /* &__studio-page {
-         color: $background-blue;
+         color: $color-blue;
      }
 
     /* &__studio-page:hover::after {
@@ -63,7 +63,7 @@
         width: 72px;
         height: 4px;
         border-radius: 2px;
-        background-color: $background-blue;
+        background-color: $color-blue;
         cursor: default;
         position: absolute;
         bottom: 0;
@@ -83,7 +83,7 @@
         width: 64px;
         height: 4px;
         border-radius: 2px;
-        background-color: $background-blue;
+        background-color: $color-blue;
         cursor: default;
         position: absolute;
         bottom: 0;
@@ -122,7 +122,7 @@
     
     &__contacts-link:hover,
     &__contacts-link:focus {
-    color: $background-blue;
+    color: $color-blue;
     }
 
     &__contacts-envelope {
@@ -136,7 +136,7 @@
 
     &__contacts-link:hover &__contacts-envelope,
     &__contacts-link:focus &__contacts-envelope {
-        fill: $background-blue;
+        fill: $color-blue;
     }
     
     &-contacts-smartphone {
@@ -150,7 +150,7 @@
 
     &__contacts-link:hover &-contacts-smartphone,
     &__contacts-link:focus &-contacts-smartphone {
-    fill: $background-blue;
+    fill: $color-blue;
     }
 
 }

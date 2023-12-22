@@ -62,7 +62,7 @@
 
     &__button-close:hover &__close-icon,
     &__button-close:focus &__close-icon {
-        fill: $color-blue;
+        fill: $bg-color;
     }
 
     &__title {
@@ -104,7 +104,7 @@
 
     &__form-item:hover &__form-icon
     &__form-item:focus &__form-icon {
-    fill: $color-blue;
+    fill: $bg-color;
     }
 
     &__form-lable {
@@ -135,7 +135,7 @@
     &__form-item:hover &__form-input,
     &__form-item:focus &__form-input {
     border-radius: 4px;
-    border: 1px solid $color-blue;
+    border: 1px solid $bg-color;
     }
 
     &__form-box {
@@ -172,7 +172,7 @@
     &__form-box:hover &__comment-input,
     &__form-box:focus &__comment-input {
         border-radius: 4px;
-        border: 1px solid $color-blue;
+        border: 1px solid $bg-color;
     }
 
     &__form-checkbox {
@@ -214,7 +214,7 @@
     }
 
     &__checkbox-input:checked + &__checkbox-lable > &__checkbox-custom {
-        background-color: $color-blue;
+        background-color: $bg-color;
         border: none;
     }
 
@@ -230,7 +230,7 @@
     }
 
     &__checkbox-link {
-        color: $color-blue;
+        color: $bg-color;
         font-family: 'Roboto';
         font-size: 14px;
         font-weight: 400;
@@ -252,7 +252,7 @@
     letter-spacing: 0.96px;
     padding: 10px 52px;
     border-radius: 4px;
-    background: $color-blue;
+    background: $bg-color;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     justify-content: center;
     margin-top: 30px;

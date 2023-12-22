@@ -27,7 +27,7 @@
         font-size: 26px;
         line-height: 1.19;
         letter-spacing: 0.03em;
-        color: $color-blue;
+        color: $bg-color;
     }
 
     &__address {
@@ -84,7 +84,7 @@
 
     &__social-link:hover,
     &__social-link:focus {
-    background-color: $color-blue;
+    background-color: $bg-color;
     }
 
     &__social-icon {
@@ -133,13 +133,13 @@
     }
 
     &__input:hover {
-        border: 1px solid $color-blue;
+        border: 1px solid $bg-color;
     }
 
     &__submit {
         display: flex;
         border-radius: 4px;
-        background: $color-blue;
+        background: $bg-color;
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
         gap: 10px;
         padding-top: 10px;
@@ -168,7 +168,7 @@
 
     &__submit:hover &__submit-title,
     &__submit:focus &__submit-title {
-    color: $color-blue;
+    color: $bg-color;
     }
 
     &__form-icon {
@@ -180,6 +180,6 @@
 
     &__submit:hover &__form-icon,
     &__submit:focus &__form-icon {
-    fill: $color-blue;
+    fill: $bg-color;
     }
 }

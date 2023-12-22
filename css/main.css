@@ -62,7 +62,7 @@ img {
   background-color: rgba(255, 255, 255, 0.8);
   z-index: 1000;
   /* &__studio-page {
-       color: $color-blue;
+       color: $bg-color;
    }
 
   /* &__studio-page:hover::after {

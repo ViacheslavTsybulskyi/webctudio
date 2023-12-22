@@ -18,7 +18,7 @@
     }
 
     &__logo-color {
-        color: $color-blue;
+        color: $bg-color;
     }
 
     &__nav {
@@ -47,11 +47,11 @@
 
     &__page:hover,
     &__page:focus {
-    color: $color-blue;
+    color: $bg-color;
     }
 
     /* &__studio-page {
-         color: $color-blue;
+         color: $bg-color;
      }
 
     /* &__studio-page:hover::after {
@@ -63,7 +63,7 @@
         width: 72px;
         height: 4px;
         border-radius: 2px;
-        background-color: $color-blue;
+        background-color: $bg-color;
         cursor: default;
         position: absolute;
         bottom: 0;
@@ -83,7 +83,7 @@
         width: 64px;
         height: 4px;
         border-radius: 2px;
-        background-color: $color-blue;
+        background-color: $bg-color;
         cursor: default;
         position: absolute;
         bottom: 0;
@@ -122,7 +122,7 @@
     
     &__contacts-link:hover,
     &__contacts-link:focus {
-    color: $color-blue;
+    color: $bg-color;
     }
 
     &__contacts-envelope {
@@ -136,7 +136,7 @@
 
     &__contacts-link:hover &__contacts-envelope,
     &__contacts-link:focus &__contacts-envelope {
-        fill: $color-blue;
+        fill: $bg-color;
     }
     
     &-contacts-smartphone {
@@ -150,7 +150,7 @@
 
     &__contacts-link:hover &-contacts-smartphone,
     &__contacts-link:focus &-contacts-smartphone {
-    fill: $color-blue;
+    fill: $bg-color;
     }
 
 }

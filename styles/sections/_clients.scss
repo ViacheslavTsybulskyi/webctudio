@@ -37,7 +37,7 @@
     &__link:hover,
     &__link:focus {
     border-radius: 4px;
-    border: 1px solid $color-blue;
+    border: 1px solid $bg-color;
     }
 
     &__icon {
@@ -51,6 +51,6 @@
 
     &__link:hover &__icon,
     &__link:focus &__icon {
-    fill: $color-blue;
+    fill: $bg-color;
     }
 }

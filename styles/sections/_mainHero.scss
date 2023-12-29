@@ -14,13 +14,8 @@
     margin-right: auto;
 
     &__title {
-        font-weight: 900;
-        font-size: 44px;
-        line-height: 1.36;
-        text-align: center;
-        letter-spacing: 0.06em;
+        @include text-styles ('Roboto', 900, 44px, 1.36, 0.06em, $white);
         text-transform: uppercase;
-        color: $white;
         text-align: center;
         margin-left: auto;
         margin-right: auto;
@@ -28,13 +23,9 @@
     }
 
     &__button {
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 1.87;
+        @include text-styles('Roboto', 700, 16px, 1.87, 0.06em, $white);
         align-items: center;
         text-align: center;
-        letter-spacing: 0.06em;
-        color: $white;
         margin-left: auto;
         margin-right: auto;
         display: block;

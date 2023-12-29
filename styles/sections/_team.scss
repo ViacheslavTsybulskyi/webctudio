@@ -4,12 +4,7 @@
     background-color: rgb(245, 244, 250);
 
     &__title {
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.16;
-        text-align: center;
-        letter-spacing: 0.03em;
-        color: $black;
+        @include text-styles('Roboto', 700, 36px, 1.16, 0.03em, $black);
         margin-bottom: 50px;
     }
 
@@ -28,22 +23,13 @@
     }
 
     &__name {
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.18;
-        text-align: center;
-        letter-spacing: 0.03em;
-        color: $black;
+        @include text-styles('Roboto', 500, 16px, 1.18, 0.03em, $black);
         margin-top: 30px;
     }
 
     &__description {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.18;
+        @include text-styles('Roboto', 400, 16px, 1.18, 0.03em, $text-color);
         text-align: center;
-        letter-spacing: 0.03em;
-        color: $text-color;
         margin-top: 10px;
     }
 

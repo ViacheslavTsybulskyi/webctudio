@@ -2,12 +2,8 @@
     padding-bottom: 94px;
 
     &__title {
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.16;
+        @include text-styles('Roboto', 700, 36px, 1.16, 0.03em, $black);
         text-align: center;
-        letter-spacing: 0.03em;
-        color: $black;
         margin-bottom: 50px;
     }
 
@@ -27,13 +23,8 @@
     }
 
     &__text {
-        color: $white;
+        @include text-styles('Roboto', 700, 14px, normal, 0.42px, $white);
         text-align: center;
-        font-family: 'Roboto';
-        font-size: 14px;
-        font-weight: 700;
-        line-height: normal;
-        letter-spacing: 0.42px;
         text-transform: uppercase;
         width: 370px;
         height: 70px;

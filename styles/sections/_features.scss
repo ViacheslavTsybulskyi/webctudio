@@ -35,20 +35,12 @@
     }
 
     &__text {
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        color: $black;
+        @include text-styles('Roboto', 700, 14px, 1.14, 0.03em, $black);
         margin-bottom: 10px;
+        text-transform: uppercase;
     }
 
     &__description {
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 1.71;
-        letter-spacing: 0.03em;
-        color: $text-color;
+        @include text-styles ('Roboto', 400, 14px, 1.71, 0.03em, $text-color);
     }
 }

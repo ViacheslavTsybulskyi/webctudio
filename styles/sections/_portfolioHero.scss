@@ -14,12 +14,7 @@
     }
 
     &__button {
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.62;
-        text-align: center;
-        letter-spacing: 0.03em;
-        color: $black;
+        @include text-styles('Roboto', 500, 16px, 1.62, 0.03em, $black);
         border-radius: 4px;
         background-color: $white;
         padding: 6px 25px;
@@ -71,22 +66,14 @@
     }   
 
     &__card-name {
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 2;
-        letter-spacing: 0.06em;
-        color: $black;
+        @include text-styles('Roboto', 700, 18px, 2, 0.06em, $black);
         margin-bottom: 4px;
         margin-left: 24px;
         margin-right: 24px;
     }
 
     &__card-text {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.87;
-        letter-spacing: 0.03em;
-        color: $text-color;
+        @include text-styles('Roboto', 400, 16px, 1.87, 0.03em, $text-color);
         margin-left: 24px;
         margin-right: 24px;
         padding-bottom: 20px;
@@ -105,7 +92,6 @@
         align-items: center;
         transition-property: transform;
         transition-duration: 200ms;
-    
     }
 
     &__card-link:hover &__card-overlay,
@@ -114,13 +100,7 @@
     }
 
     &__card-subtitle {
-        color: $white;
-    
-        font-family: 'Roboto';
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 1.55;
-        letter-spacing: 0.54px;
+        @include text-styles('Roboto', 400, 18px, 1.55, 00.54px, $white);
         width: 322px;
     }
 }

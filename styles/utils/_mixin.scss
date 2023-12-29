@@ -1,0 +1,8 @@
+@mixin text-styles($fontF: 'Roboto', $fontW: 500, $fontS: 14px, $lineH: 1.14, $space: 0.02em, $color: $black){
+    font-family: $fontF;
+    font-weight: $fontW;
+    font-size: $fontS;
+    line-height: $lineH;
+    letter-spacing: $space;
+    color: $color;
+}

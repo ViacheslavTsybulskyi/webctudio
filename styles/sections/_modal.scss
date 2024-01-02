@@ -6,8 +6,7 @@
     right: 0;
     background: rgba(0, 0, 0, 0.20);
     opacity: 1;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @include transition(opacity visibility);
 }
 
 .backdrop.is-hidden {
@@ -30,7 +29,7 @@
     background-color: $white;
     @include padding-section(40px, 40px, 40px, 40px);
     position: relative;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @include transition(opacity);
 
     &__button-close {
         cursor: pointer;
@@ -89,9 +88,7 @@
         position: absolute;
      bottom: 14px;
      left: 15px;
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+     @include transition(fill);
     }
 
     &__form-item:hover &__form-icon
@@ -112,9 +109,7 @@
         border: 1px solid rgba(33, 33, 33, 0.20); 
         @include padding-section(12px, auto, 12px, 42px);
         outline: none;
-        transition-property: border;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @include transition(border);
     }
 
     &__form-item:hover &__form-input,
@@ -137,9 +132,7 @@
         border: 1px solid rgba(33, 33, 33, 0.20);
         margin-bottom: 20px;
         @include padding-section(12px, 16px, 12px, 16px);
-        transition-property: border;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @include transition(border);
     }
 
     &__comment-input::placeholder {
@@ -218,9 +211,7 @@
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     justify-content: center;
     @include margin(30px, auto, auto, auto);
-    transition-property: transform;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include transition(transform);
     transform: scale(1);
     }
 

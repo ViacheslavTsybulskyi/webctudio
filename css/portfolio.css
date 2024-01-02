@@ -223,7 +223,7 @@ img {
   padding-right: 25px;
   padding-bottom: 6px;
   padding-left: 25px;
-  transition-property: background, color, box-shadow;
+  transition-property: background color box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 4px;
@@ -303,6 +303,7 @@ img {
   align-items: center;
   transition-property: transform;
   transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero__card-link:hover .hero__card-overlay, .hero__card-link:focus .hero__card-overlay {
   transform: translateX(0);
@@ -435,7 +436,9 @@ img {
   line-height: 1.25;
   letter-spacing: 0.48px;
   color: rgba(255, 255, 255, 0.6);
-  transition: border 250ms;
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer__input:hover {
   border: 1px solid #1296F3;
@@ -451,7 +454,9 @@ img {
   padding-bottom: 10px;
   padding-left: 28px;
   align-items: center;
-  transition: background 250ms;
+  transition-property: background;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer__submit:hover, .footer__submit:focus {
   background-color: #FFF;
@@ -464,7 +469,9 @@ img {
   letter-spacing: 0.96px;
   color: #FFF;
   text-align: center;
-  transition: color 250ms;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer__submit:hover .footer__submit-title, .footer__submit:focus .footer__submit-title {
   color: #1296F3;
@@ -473,7 +480,9 @@ img {
   width: 24px;
   height: 24px;
   fill: #FFF;
-  transition: fill 250ms;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer__submit:hover .footer__form-icon, .footer__submit:focus .footer__form-icon {
   fill: #1296F3;

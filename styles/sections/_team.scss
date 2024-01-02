@@ -45,9 +45,7 @@
     &__item-icon {
         width: 44px;
         height: 44px;
-        transition-property: fill;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @include transition(fill);
     }
 
     &__link-icon {
@@ -59,9 +57,7 @@
         justify-content: center;
         align-items: center;
         outline: none;
-        transition-property: background;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @include transition();
     }
 
     &__link-icon:hover,
@@ -73,9 +69,7 @@
         width: 20px;
         height: 20px;
         fill: #AFB1B8;
-        transition-property: fiil;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @include transition(fill);
     }
 
     &__link-icon:focus &__icon,

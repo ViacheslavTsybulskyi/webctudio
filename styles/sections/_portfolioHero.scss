@@ -18,9 +18,7 @@
         border-radius: 4px;
         padding: 6px 25px;
         @include padding-section(6px, 25px, 6px, 25px);
-        transition-property: background, color, box-shadow;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @include transition(background color box-shadow);
         border-radius: 4px;
         background: #F5F4FA;
     }
@@ -46,9 +44,7 @@
         overflow: hidden;
         border: 1px solid #EEE;
         background: $white;
-        transition-property: box-shadow;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @include transition(box-shadow);
     }
 
     &__card-item:hover,
@@ -91,8 +87,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        transition-property: transform;
-        transition-duration: 200ms;
+        @include transition(transform, 200ms);
     }
 
     &__card-link:hover &__card-overlay,

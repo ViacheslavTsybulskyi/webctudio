@@ -54,6 +54,12 @@ img {
   /* outline: solid red; */
 }
 
+.hero__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -204,9 +210,7 @@ img {
   border: 1px solid #ECECEC;
 }
 .hero__list {
-  display: flex;
   gap: 8px;
-  justify-content: center;
   padding-top: 94px;
   margin-bottom: 50px;
 }

@@ -9,8 +9,7 @@
     }
 
     &__list {
-        display: flex;
-        justify-content: center;
+        @extend %flex;
         gap: 30px;
     }
 
@@ -35,11 +34,9 @@
     }
 
     &__list-icon {
-        display: flex;
+        @extend %flex;
         gap: 10px;
-        margin-top: 16px;
-        margin-bottom: 30px;
-        justify-content: center;
+        @include margin(16px, auto, 30px, auto)
     }
 
     &__item-icon {
@@ -53,9 +50,7 @@
         height: 100%;
         display: block;
         border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @extend %flex;
         outline: none;
         @include transition();
     }

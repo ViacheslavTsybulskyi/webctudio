@@ -54,6 +54,12 @@ img {
   /* outline: solid red; */
 }
 
+.modal__checkbox-custom, .modal__form-checkbox, .modal__button-close, .team__link-icon, .team__list-icon, .team__list, .work__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -348,9 +354,6 @@ img {
   width: 370px;
   height: 70px;
   background: rgba(47, 48, 58, 0.8);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: absolute;
   top: 224px;
   left: 0;
@@ -374,8 +377,6 @@ img {
   text-align: center;
 }
 .team__list {
-  display: flex;
-  justify-content: center;
   gap: 30px;
 }
 .team__item {
@@ -406,11 +407,11 @@ img {
   margin-top: 10px;
 }
 .team__list-icon {
-  display: flex;
   gap: 10px;
   margin-top: 16px;
+  margin-right: auto;
   margin-bottom: 30px;
-  justify-content: center;
+  margin-left: auto;
 }
 .team__item-icon {
   width: 44px;
@@ -424,9 +425,6 @@ img {
   height: 100%;
   display: block;
   border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   outline: none;
   transition-property: background;
   transition-duration: 250ms;
@@ -473,7 +471,10 @@ img {
 }
 .clients__link {
   display: flex;
-  padding: 16px 32px;
+  padding-top: 16px;
+  padding-right: 32px;
+  padding-bottom: 16px;
+  padding-left: 32px;
   border-radius: 4px;
   border: 1px solid #AFB1B8;
   outline: none;
@@ -547,9 +548,6 @@ img {
   position: absolute;
   top: 8px;
   right: 8px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .modal__close-icon {
   transition-property: fill;
@@ -675,9 +673,6 @@ img {
   border: 1px solid #1296F3;
 }
 .modal__form-checkbox {
-  display: flex;
-  justify-content: center;
-  align-content: center;
   gap: 8px;
 }
 .modal__checkbox-input {
@@ -703,9 +698,6 @@ img {
   background-color: #FFF;
   border-radius: 2px;
   border: 2px solid #212121;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .modal__checkbox-input:checked + .modal__checkbox-lable > .modal__checkbox-custom {
   background-color: #1296F3;

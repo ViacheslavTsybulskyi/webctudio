@@ -41,10 +41,7 @@
         position: absolute;
         top: 8px;
         right: 8px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    
+        @extend %flex;
     }
 
     &__close-icon {
@@ -147,9 +144,7 @@
     }
 
     &__form-checkbox {
-        display: flex;
-        justify-content: center;
-        align-content: center;
+        @extend %flex;
         gap: 8px;
     }
 
@@ -174,9 +169,7 @@
     
         border: 2px solid $black;
     
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @extend %flex;
     }
 
     &__checkbox-input:checked + &__checkbox-lable > &__checkbox-custom {

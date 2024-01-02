@@ -19,7 +19,7 @@
 
     &__link {
         display: flex;
-        padding: 16px 32px;
+        @include padding-section(16px, 32px, 16px, 32px);
         border-radius: 4px;
         border: 1px solid #AFB1B8;
         outline: none;

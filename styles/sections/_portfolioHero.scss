@@ -6,9 +6,8 @@
     }
 
     &__list {
-        display: flex;
+        @extend %flex;
         gap: 8px;
-        justify-content: center;
         padding-top: 94px;
         margin-bottom: 50px;
     }

@@ -218,7 +218,6 @@ img {
   letter-spacing: 0.03em;
   color: #212121;
   border-radius: 4px;
-  background-color: #FFF;
   padding: 6px 25px;
   padding-top: 6px;
   padding-right: 25px;
@@ -227,6 +226,8 @@ img {
   transition-property: background, color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 4px;
+  background: #F5F4FA;
 }
 .hero__button:hover, .hero__button:focus {
   color: #FFF;
@@ -244,7 +245,7 @@ img {
   flex-basis: calc((100% - 60px) / 3);
   position: relative;
   overflow: hidden;
-  border: 1px solid #FFF;
+  border: 1px solid #EEE;
   background: #FFF;
   transition-property: box-shadow;
   transition-duration: 250ms;
@@ -269,9 +270,10 @@ img {
   line-height: 2;
   letter-spacing: 0.06em;
   color: #212121;
+  margin-top: auto;
+  margin-right: 24px;
   margin-bottom: 4px;
   margin-left: 24px;
-  margin-right: 24px;
 }
 .hero__card-text {
   font-family: "Roboto";
@@ -283,6 +285,10 @@ img {
   margin-left: 24px;
   margin-right: 24px;
   padding-bottom: 20px;
+  margin-top: auto;
+  margin-right: 24px;
+  margin-bottom: 20px;
+  margin-left: 24px;
 }
 .hero__card-overlay {
   position: absolute;

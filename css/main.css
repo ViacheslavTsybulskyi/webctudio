@@ -211,8 +211,10 @@ img {
   padding-bottom: 200px;
   padding-left: auto;
   max-width: 1600px;
-  margin-left: auto;
+  margin-top: auto;
   margin-right: auto;
+  margin-bottom: auto;
+  margin-left: auto;
 }
 .hero__title {
   font-family: "Roboto";
@@ -223,8 +225,10 @@ img {
   color: #FFF;
   text-transform: uppercase;
   text-align: center;
-  margin-left: auto;
+  margin-top: auto;
   margin-right: auto;
+  margin-bottom: auto;
+  margin-left: auto;
   max-width: 696px;
 }
 .hero__button {
@@ -236,14 +240,15 @@ img {
   color: #FFF;
   align-items: center;
   text-align: center;
-  margin-left: auto;
+  margin-top: 30px;
   margin-right: auto;
+  margin-bottom: auto;
+  margin-left: auto;
   display: block;
   border: none;
   background: #1296F3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  margin-top: 30px;
   width: 216px;
   height: 50px;
   transition-property: transform;
@@ -739,8 +744,9 @@ img {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   justify-content: center;
   margin-top: 30px;
-  margin-left: auto;
   margin-right: auto;
+  margin-bottom: auto;
+  margin-left: auto;
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

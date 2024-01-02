@@ -13,3 +13,16 @@ padding-right: $paddingR;
 padding-bottom: $paddingB;
 padding-left: $paddingL;
 }
+
+@mixin margin($marginT: auto, $marginR: auto, $marginB: auto, $marginL: auto){
+    margin-top: $marginT;
+    margin-right: $marginR;
+    margin-bottom: $marginB;
+    margin-left: $marginL;    
+}
+
+@mixin transition($transitionP: background, $transitionD: 250ms, $transitionT: cubic-bezier(0.4, 0, 0.2, 1)){
+    transition-property: $transitionP;
+    transition-duration: $transitionD;
+    transition-timing-function: $transitionT;
+}

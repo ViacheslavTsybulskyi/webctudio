@@ -8,8 +8,7 @@
 
     &__logo-link {
         @include text-styles('Raleway', 700, 26px, 1.19, 0.03em, #000000);
-        padding-bottom: 25px;
-        padding-top: 24px;
+        @include padding-section(24px, auto, 25px, auto);
     }
 
     &__logo-color {
@@ -93,8 +92,7 @@
         display: flex;
         margin-left: 315px;
         gap: 30px;
-        padding-top: 32px;
-        padding-bottom: 32px;
+        @include padding-section(32px, auto, 32px, auto);
     }
 
     &__contacts-link {

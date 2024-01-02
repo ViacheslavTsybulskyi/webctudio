@@ -1,11 +1,11 @@
 .team {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    @include padding-section(94px, auto, 94px, auto);
     background-color: rgb(245, 244, 250);
 
     &__title {
         @include text-styles('Roboto', 700, 36px, 1.16, 0.03em, $black);
         margin-bottom: 50px;
+        text-align: center;
     }
 
     &__list {
@@ -25,6 +25,7 @@
     &__name {
         @include text-styles('Roboto', 500, 16px, 1.18, 0.03em, $black);
         margin-top: 30px;
+        text-align: center
     }
 
     &__description {

@@ -1,6 +1,5 @@
 .clients {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    @include padding-section(94px, auto, 94px, auto);
 
     &__title {
         @include text-styles('Roboto', 700, 36px, normal, 1.08px, $black);

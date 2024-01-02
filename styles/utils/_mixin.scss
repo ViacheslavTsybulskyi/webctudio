@@ -6,3 +6,10 @@
     letter-spacing: $space;
     color: $color;
 }
+
+@mixin padding-section($paddingT: 60px, $paddingR: 28px, $paddingB: 60px, $paddingL: 28px){
+padding-top: $paddingT;
+padding-right: $paddingR;
+padding-bottom: $paddingB;
+padding-left: $paddingL;
+}

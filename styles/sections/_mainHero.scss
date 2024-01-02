@@ -7,8 +7,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding-bottom: 200px;
-    padding-top: 200px;
+    @include padding-section(200px, auto, 200px, auto);
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
@@ -37,7 +36,9 @@
         width: 216px;
         height: 50px;
         transition-property: transform;
-        transition-duration: 250ms;
+        transition-duration: 250ms;    
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transform: scale(1);
     }
     
     &__button:hover,

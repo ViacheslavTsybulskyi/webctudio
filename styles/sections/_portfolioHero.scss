@@ -18,6 +18,7 @@
         border-radius: 4px;
         background-color: $white;
         padding: 6px 25px;
+        @include padding-section(6px, 25px, 6px, 25px);
         transition-property: background, color, box-shadow;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

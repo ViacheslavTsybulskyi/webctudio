@@ -8,11 +8,31 @@
 
     &__logo-link {
         @include text-styles('Raleway', 700, 26px, 1.19, 0.03em, #000000);
-        @include padding-section(24px, auto, 25px, auto);
+        @include padding-section(16px, auto, 16px, auto);
+        
+        @media screen and (min-width: 768px) {
+            @include padding-section(24px, auto, 25px, auto);
+        }
     }
 
     &__logo-color {
         color: $bg-color;
+    }
+
+    &__nav-button {
+       background-color: transparent;
+       display: flex;
+       @include margin(10px, 0, 10px, auto);
+       
+       @media screen and (min-width: 768px) {
+        display: none;
+        }
+    }
+
+    &__nav-svg {
+        fill: $black;
+        width: 40px;
+        height: 40px;
     }
 
     &__nav {
@@ -20,12 +40,16 @@
     }
 
     &__list {
-        display: flex;
+        display: none;
         margin-left: 93px;
         gap: 50px;
         padding-top: 32px;
         /* padding-bottom: 32px; */
         position: relative;
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+        }
     }
 
     &__page {
@@ -87,10 +111,14 @@
     }*/
 
     &__contacts-list {
-        display: flex;
+        display: none;
         margin-left: 315px;
         gap: 30px;
         @include padding-section(32px, auto, 32px, auto);
+    
+        @media screen and (min-width: 768px) {
+            display: flex;
+        }
     }
 
     &__contacts-link {

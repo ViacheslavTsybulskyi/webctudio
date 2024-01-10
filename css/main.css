@@ -46,12 +46,17 @@ img {
 
 /* container */
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
   /* outline: solid red; */
+}
+@media screen and (min-width: 1600px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .modal__checkbox-custom, .modal__form-checkbox, .modal__button-close, .team__link-icon, .team__list-icon, .team__list, .work__text {
@@ -121,24 +126,55 @@ img {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #000000;
-  padding-top: 24px;
+  padding-top: 16px;
   padding-right: auto;
-  padding-bottom: 25px;
+  padding-bottom: 16px;
   padding-left: auto;
+}
+@media screen and (min-width: 768px) {
+  .header__logo-link {
+    padding-top: 24px;
+    padding-right: auto;
+    padding-bottom: 25px;
+    padding-left: auto;
+  }
 }
 .header__logo-color {
   color: #1296F3;
+}
+.header__nav-button {
+  background-color: transparent;
+  display: flex;
+  margin-top: 10px;
+  margin-right: 0;
+  margin-bottom: 10px;
+  margin-left: auto;
+}
+@media screen and (min-width: 768px) {
+  .header__nav-button {
+    display: none;
+  }
+}
+.header__nav-svg {
+  fill: #212121;
+  width: 40px;
+  height: 40px;
 }
 .header__nav {
   display: flex;
 }
 .header__list {
-  display: flex;
+  display: none;
   margin-left: 93px;
   gap: 50px;
   padding-top: 32px;
   /* padding-bottom: 32px; */
   position: relative;
+}
+@media screen and (min-width: 768px) {
+  .header__list {
+    display: flex;
+  }
 }
 .header__page {
   font-family: "Roboto";
@@ -155,13 +191,18 @@ img {
   color: #1296F3;
 }
 .header__contacts-list {
-  display: flex;
+  display: none;
   margin-left: 315px;
   gap: 30px;
   padding-top: 32px;
   padding-right: auto;
   padding-bottom: 32px;
   padding-left: auto;
+}
+@media screen and (min-width: 768px) {
+  .header__contacts-list {
+    display: flex;
+  }
 }
 .header__contacts-link {
   font-family: "Roboto";

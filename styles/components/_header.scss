@@ -7,11 +7,16 @@
     z-index: 1000;
 
     &__logo-link {
-        @include text-styles('Raleway', 700, 26px, 1.19, 0.03em, #000000);
         @include padding-section(16px, auto, 16px, auto);
+        @include text-styles('Raleway', 700, 24px, normal, 0.72px, #000000);
         
         @media screen and (min-width: 768px) {
-            @include padding-section(24px, auto, 25px, auto);
+            @include padding-section(26px, auto, 26px, auto);
+        }
+
+        @media screen and (min-width: 1200px) {
+            @include padding-section(24px, auto, 25px, auto);   
+            @include text-styles('Raleway', 700, 26px, 1.19, 0.03em, #000000);
         }
     }
 
@@ -41,14 +46,18 @@
 
     &__list {
         display: none;
-        margin-left: 93px;
-        gap: 50px;
-        padding-top: 32px;
         /* padding-bottom: 32px; */
         position: relative;
 
         @media screen and (min-width: 768px) {
             display: flex;
+            gap: 50px;
+            margin-left: 87px;
+            padding-top: 32px;  
+        }
+
+        @media screen and (min-width: 1200px){
+            margin-left: 93px;
         }
     }
 
@@ -118,6 +127,18 @@
     
         @media screen and (min-width: 768px) {
             display: flex;
+            margin-left: 96px;
+            flex-direction: column;
+            gap: 10px;
+            align-items: flex-start;
+            @include padding-section(21px, auto, 21px, auto);
+        }
+
+        @media screen and (min-width: 1200px) {
+            margin-left: 315px;
+            gap: 30px; 
+            flex-direction: row;
+            @include padding-section(32px, auto, 32px, auto);
         }
     }
 
@@ -127,6 +148,14 @@
         gap: 10px;
         align-items: center;
         @include transition(color);
+
+        @media screen and (min-width: 768px) {
+            @include text-styles(Roboto, 500, 12px, normal, 0.24px, $text-color);
+        }
+
+        @media screen and (min-width: 1200px) {
+            @include text-styles(Roboto, 500, 14px, normal, 0.28px, $text-color);
+        }
     }
     
     &__contacts-link:hover,

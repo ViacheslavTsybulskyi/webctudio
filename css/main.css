@@ -51,7 +51,7 @@ img {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  /* outline: solid red; */
+  outline: solid red;
 }
 @media screen and (min-width: 1200px) {
   .container {
@@ -180,6 +180,7 @@ img {
 }
 .header__nav {
   display: flex;
+  justify-content: space-between;
 }
 .header__list {
   display: none;
@@ -307,12 +308,7 @@ img {
 }
 
 .main {
-  padding-top: 118px;
-}
-@media screen and (min-width: 1200px) {
-  .main {
-    padding-top: 80px;
-  }
+  padding-top: 80px;
 }
 
 .hero {
@@ -396,24 +392,51 @@ img {
 }
 
 .features {
-  padding-top: 94px;
+  padding-top: 60px;
   padding-right: auto;
-  padding-bottom: 94px;
+  padding-bottom: 60px;
   padding-left: auto;
+}
+@media screen and (min-width: 1200px) {
+  .features {
+    padding-top: 94px;
+    padding-right: auto;
+    padding-bottom: 94px;
+    padding-left: auto;
+  }
 }
 .features__list {
   display: flex;
   gap: 30px;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .features__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 .features__item::before {
   content: "";
   display: block;
-  width: 270px;
+  width: 450px;
   height: 120px;
   background-color: rgb(245, 244, 250);
   background-position: center;
   background-repeat: no-repeat;
   margin-bottom: 30px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media screen and (min-width: 768px) {
+  .features__item::before {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features__item::before {
+    width: 270px;
+  }
 }
 .features__first::before {
   background-image: url(../../img/features-antenna.webp);
@@ -436,6 +459,12 @@ img {
   color: #212121;
   margin-bottom: 10px;
   text-transform: uppercase;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .features__text {
+    text-align: start;
+  }
 }
 .features__description {
   font-family: "Roboto";
@@ -444,6 +473,13 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .features__description {
+    width: 354px;
+    text-align: start;
+  }
 }
 
 .work {

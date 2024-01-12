@@ -1,20 +1,45 @@
 .features {
-    @include padding-section(94px, auto, 94px, auto);
+    @include padding-section(60px, auto, 60px, auto);
+
+    @media screen and (min-width: 1200px) {
+        @include padding-section(94px, auto, 94px, auto)
+    }
 
     &__list {
         display: flex;
         gap: 30px;
+        flex-direction: column;
+       
+        @media screen and (min-width: 768px) {
+            flex-direction: row;
+            flex-wrap: wrap;
+
+        }
+
+        @media screen and (min-width: 1200px ) {
+            
+        }
     }
 
     &__item::before {
         content: '';
         display: block;
-        width: 270px;
+        width: 450px; 
         height: 120px;
         background-color: rgb(245, 244, 250);
         background-position: center;
         background-repeat: no-repeat;
         margin-bottom: 30px;
+        margin-right: auto;
+        margin-left: auto;
+        
+        @media screen and (min-width: 768px) {
+            width: 354px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 270px;   
+        }
     }
 
     &__first::before {
@@ -37,9 +62,20 @@
         @include text-styles('Roboto', 700, 14px, 1.14, 0.03em, $black);
         margin-bottom: 10px;
         text-transform: uppercase;
+        text-align: center;
+
+        @media screen and (min-width: 768px) {
+            text-align: start; 
+        }
     }
 
     &__description {
         @include text-styles ('Roboto', 400, 14px, 1.71, 0.03em, $text-color);
+        text-align: center;
+
+        @media screen and (min-width: 768px) {
+            width: 354px;
+            text-align: start;
+        }
     }
 }

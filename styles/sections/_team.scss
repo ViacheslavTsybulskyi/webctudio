@@ -1,16 +1,32 @@
 .team {
-    @include padding-section(94px, auto, 94px, auto);
+    @include padding-section(60px, auto, 60px, auto);
     background-color: rgb(245, 244, 250);
 
+    @media screen and (min-width: 1200px) {
+         @include padding-section(94px, auto, 94px, auto);   
+    }
+
     &__title {
-        @include text-styles('Roboto', 700, 36px, 1.16, 0.03em, $black);
+        @include text-styles('Roboto', 700, 28px, normal, 0.84px, $black);
         margin-bottom: 50px;
         text-align: center;
+
+        @media screen and (min-width: 1200px) {
+            @include text-styles('Roboto', 700, 36px, 1.16, 0.03em, $black)
+        }
     }
 
     &__list {
         @extend %flex;
         gap: 30px;
+        flex-direction: column;
+
+        @media screen and (min-width: 768px) {
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 30px;
+            row-gap: 30px;
+        }
     }
 
     &__item {
@@ -18,7 +34,15 @@
         background-color: white;
         box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
         box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-        width: 270px;
+        width: 450px;
+
+        @media screen and (min-width: 768px) {
+            width: 354px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 270px;
+        }
     }
 
     &__name {

@@ -1,20 +1,39 @@
 .clients {
     @include padding-section(94px, auto, 94px, auto);
+    
+    @media screen and (min-width: 768px) {
+        
+    }
 
     &__title {
-        @include text-styles('Roboto', 700, 36px, normal, 1.08px, $black);
+        @include text-styles('Roboto', 700, 28px, normal, 0.84px, $black);
         align-items: center;
         text-align: center;
         margin-bottom: 50px;
+        
+        @media screen and (min-width: 1200px) {
+            @include text-styles('Roboto', 700, 36px, normal, 1.08px, $black);
+        }
     }
 
     &__list {
         display: flex;
+        justify-content: center;
         gap: 30px;
+        row-gap: 30px;
+        flex-wrap: wrap;
     }
 
     &__item {
-        max-width: 170px;
+        width: 210px;
+
+        @media screen and (min-width: 768px) {
+            width: 226px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            max-width: 170px;
+        }
     }
 
     &__link {
@@ -37,6 +56,8 @@
         height: 60px;
         fill: #AFB1B8;
         @include transition(fill);
+        margin-right: auto;
+        margin-left: auto;
     }
 
     &__link:hover &__icon,

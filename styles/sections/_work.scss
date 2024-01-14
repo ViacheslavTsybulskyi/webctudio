@@ -1,6 +1,14 @@
 .work {
     padding-bottom: 94px;
 
+    @media screen and (min-width: 450px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: block;
+    }
+
     &__title {
         @include text-styles('Roboto', 700, 36px, 1.16, 0.03em, $black);
         text-align: center;

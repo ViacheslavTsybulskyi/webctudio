@@ -8,8 +8,15 @@
     &__list {
         @extend %flex;
         gap: 8px;
+        row-gap: 15px;
         padding-top: 94px;
         margin-bottom: 50px;
+        flex-wrap: wrap;
+        justify-content: start;
+
+        @media screen and (min-width: 768px) {
+            justify-content: center;
+        }
     }
 
     &__button {
@@ -35,15 +42,26 @@
         row-gap: 30px;
         padding-bottom: 94px;
         gap: 30px;
+        justify-content: center;
+        flex-direction: column;
+
+        @media screen and (min-width: 768px) {
+            flex-direction: row;
+
+        }
     }
 
     &__card-item {
-        flex-basis: calc((100% - 60px) / 3);
+        flex-basis: calc((100% - 60px) / 2);
         position: relative;
         overflow: hidden;
         border: 1px solid #EEE;
         background: $white;
         @include transition(box-shadow);
+
+        @media screen and (min-width: 1200px) {
+            flex-basis: calc((100% - 60px) / 3);
+        }
     }
 
     &__card-item:hover,
@@ -58,8 +76,17 @@
 
     &__card-img {
         margin-bottom: 20px;
-        width: 370px;
+
+        width: 450px;
         height: 294px;
+
+        @media screen and (min-width: 768px) {
+            width: 354px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 370px;   
+        }
     }   
 
     &__card-name {
@@ -79,7 +106,7 @@
         position: absolute;
         top: 0;
         left: 0;
-        width: 370px;
+        width: 450px;
         height: 294px;
         transform: translateX(100%);
         background-color: rgba(33, 150, 243, 0.90);
@@ -87,6 +114,14 @@
         justify-content: center;
         align-items: center;
         @include transition(transform, 200ms);
+
+        @media screen and (min-width: 768px) {
+            width: 354px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 370px;         
+        }
     }
 
     &__card-link:hover &__card-overlay,

@@ -2,7 +2,13 @@
     @include padding-section(94px, auto, 94px, auto);
     
     @media screen and (min-width: 768px) {
-        
+        max-width: 738px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    @media screen and (min-width: 1200px) {
+        max-width: 1170px;
     }
 
     &__title {

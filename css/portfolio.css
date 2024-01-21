@@ -314,8 +314,16 @@ img {
 }
 .hero__list {
   gap: 8px;
+  row-gap: 15px;
   padding-top: 94px;
   margin-bottom: 50px;
+  flex-wrap: wrap;
+  justify-content: start;
+}
+@media screen and (min-width: 768px) {
+  .hero__list {
+    justify-content: center;
+  }
 }
 .hero__button {
   font-family: "Roboto";
@@ -347,9 +355,16 @@ img {
   row-gap: 30px;
   padding-bottom: 94px;
   gap: 30px;
+  justify-content: center;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .hero__card-list {
+    flex-direction: row;
+  }
 }
 .hero__card-item {
-  flex-basis: calc((100% - 60px) / 3);
+  flex-basis: calc((100% - 60px) / 2);
   position: relative;
   overflow: hidden;
   border: 1px solid #EEE;
@@ -357,6 +372,11 @@ img {
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .hero__card-item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
 }
 .hero__card-item:hover, .hero__card-item:focus {
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
@@ -367,8 +387,18 @@ img {
 }
 .hero__card-img {
   margin-bottom: 20px;
-  width: 370px;
+  width: 450px;
   height: 294px;
+}
+@media screen and (min-width: 768px) {
+  .hero__card-img {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__card-img {
+    width: 370px;
+  }
 }
 .hero__card-name {
   font-family: "Roboto";
@@ -401,7 +431,7 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  width: 370px;
+  width: 450px;
   height: 294px;
   transform: translateX(100%);
   background-color: rgba(33, 150, 243, 0.9);
@@ -411,6 +441,16 @@ img {
   transition-property: transform;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .hero__card-overlay {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__card-overlay {
+    width: 370px;
+  }
 }
 .hero__card-link:hover .hero__card-overlay, .hero__card-link:focus .hero__card-overlay {
   transform: translateX(0);
@@ -434,10 +474,30 @@ img {
 }
 .footer__box {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .footer__box {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__box {
+    flex-wrap: nowrap;
+  }
 }
 .footer__nav {
-  margin-right: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .footer__nav {
+    margin-right: 70px;
+    justify-content: flex-start;
+  }
 }
 .footer__logo {
   font-family: "Raleway";
@@ -446,6 +506,13 @@ img {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #FFF;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 1200px) {
+  .footer__logo {
+    margin-left: 0;
+  }
 }
 .footer__logo-color {
   font-family: "Raleway";
@@ -454,8 +521,17 @@ img {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #1296F3;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 1200px) {
+  .footer__logo-color {
+    margin-left: 0;
+  }
 }
 .footer__address {
+  margin-left: auto;
+  margin-right: auto;
   font-family: "Roboto";
   font-weight: 400;
   font-size: 14px;
@@ -463,10 +539,27 @@ img {
   letter-spacing: 0.03em;
   color: #FFF;
   margin-top: 20px;
+  margin-bottom: 8px;
+}
+@media screen and (min-width: 1200px) {
+  .footer__address {
+    margin-left: 0;
+  }
 }
 .footer__list {
-  margin-top: 9px;
-  gap: 9px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+@media screen and (min-width: 1200px) {
+  .footer__list {
+    align-items: flex-start;
+    margin-left: 0;
+    margin-top: 9px;
+    gap: 9px;
+  }
 }
 .footer__link {
   font-family: "Roboto";
@@ -475,6 +568,29 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 1200px) {
+  .footer__link {
+    margin-left: 0;
+  }
+}
+.footer__social-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+}
+@media screen and (min-width: 768px) {
+  .footer__social-box {
+    margin-top: 12px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__social-box {
+    align-items: flex-start;
+  }
 }
 .footer__social-title {
   font-family: "Roboto";
@@ -511,7 +627,16 @@ img {
   fill: #FFF;
 }
 .footer__form {
-  margin-left: 93px;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+@media screen and (min-width: 1200px) {
+  .footer__form {
+    margin-top: 12px;
+    margin-left: 93px;
+  }
 }
 .footer__lable {
   font-family: "Roboto";
@@ -521,14 +646,32 @@ img {
   letter-spacing: 0.42px;
   color: #FFF;
   text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer__lable {
+    justify-content: flex-start;
+  }
 }
 .footer__form-box {
   display: flex;
   margin-top: 20px;
   gap: 12px;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .footer__form-box {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__form-box {
+    flex-direction: row;
+    gap: 0;
+  }
 }
 .footer__input {
-  width: 358px;
   padding-top: 15px;
   padding-right: auto;
   padding-bottom: 15px;
@@ -546,12 +689,28 @@ img {
   transition-property: border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  margin-left: 0;
+  margin-right: 0;
+  max-width: 450px;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .footer__input {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__input {
+    max-width: 358px;
+  }
 }
 .footer__input:hover {
   border: 1px solid #1296F3;
 }
 .footer__submit {
   display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 4px;
   background: #1296F3;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -564,6 +723,15 @@ img {
   transition-property: background;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  width: 200px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 1200px) {
+  .footer__submit {
+    margin-left: 12px;
+  }
 }
 .footer__submit:hover, .footer__submit:focus {
   background-color: #FFF;

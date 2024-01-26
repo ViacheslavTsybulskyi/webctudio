@@ -215,6 +215,28 @@
         opacity: 1;
     }
 
+    &__checkbox-text {
+        @media screen and (min-width: 768px) {
+            color: #757575;
+            font-family: Roboto;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 0.36px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            color: #757575;
+            font-family: Roboto;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;   
+            line-height: 24px; /* 171.429% */
+            letter-spacing: 0.42px;
+        }
+    }
+
     &__checkbox-link {
         text-decoration-line: underline;
 

@@ -6,6 +6,10 @@
     background-color: rgba(255, 255, 255, 0.8);
     z-index: 1000;
 
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+        position: static;
+    }
+
     &__logo-link {
         @include padding-section(16px, auto, 16px, auto);
         @include text-styles('Raleway', 700, 24px, normal, 0.72px, #000000);

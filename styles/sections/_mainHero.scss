@@ -1,5 +1,9 @@
 .main {
     padding-top: 80px;
+
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+        padding-top: 0;
+    }
 }
 
 .hero {

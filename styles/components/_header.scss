@@ -1,12 +1,9 @@
 .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
     background-color: rgba(255, 255, 255, 0.8);
     z-index: 1000;
+    width: 100%;
 
-    @media screen and (min-width: 768px) and (max-width: 1200px) {
+    @media screen and (min-width: 320x) and (max-width: 1200px) {
         position: static;
     }
 
@@ -30,8 +27,10 @@
 
     &__nav-button {
        background-color: transparent;
-       display: flex;
-       @include margin(10px, 0, 10px, auto);
+       display: block;
+       margin-top: 10px;
+       margin-left: auto;
+
        
        @media screen and (min-width: 768px) {
         display: none;
@@ -46,7 +45,7 @@
 
     &__nav {
         display: flex;
-        justify-content: space-between;
+        // justify-content: space-between;
     }
 
     &__list {
@@ -57,7 +56,7 @@
         @media screen and (min-width: 768px) {
             display: flex;
             gap: 50px;
-            margin-left: 87px;
+            margin-left: auto;
             padding-top: 32px;  
         }
 
@@ -126,13 +125,12 @@
 
     &__contacts-list {
         display: none;
-        margin-left: 315px;
-        gap: 30px;
         @include padding-section(32px, auto, 32px, auto);
     
         @media screen and (min-width: 768px) {
             display: flex;
-            margin-left: 96px;
+            margin-right: 0;
+            margin-left: auto;
             flex-direction: column;
             gap: 10px;
             align-items: flex-start;
@@ -191,5 +189,4 @@
     &__contacts-link:focus &-contacts-smartphone {
     fill: $bg-color;
     }
-
 }

@@ -31,10 +31,10 @@
       <div class="container">
         <nav class="header__nav">
           <a
-            class="header__logo-link animate__animated animate__flipInX"
+            class="header__logo-link"
             href="./index.html"
           >
-            <span class="header__logo-color animate__animated animate__flipInY"
+            <span class="header__logo-color"
               >Web</span
             >Studio
           </a>
@@ -50,7 +50,7 @@
           <ul class="header__list">
             <li class="header__item">
               <a
-                class="header__page header__studio-page animate__animated animate__zoomInDown"
+                class="header__page header__studio-page"
                 href="index.HTML"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -59,7 +59,7 @@
             </li>
             <li class="header__item">
               <a
-                class="header__page header__portfolio-page animate__animated animate__zoomInDown"
+                class="header__page header__portfolio-page"
                 href="./portfolio.html"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -68,7 +68,7 @@
             </li>
             <li class="header__item">
               <a
-                class="header__page header__contacts-page animate__animated animate__zoomInDown"
+                class="header__page header__contacts-page"
                 href="./contaks.html"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -82,7 +82,7 @@
           <ul class="header__contacts-list">
             <li class="header__contacts-item">
               <a
-                class="header__contacts-link animate__animated animate__fadeInBottomLeft"
+                class="header__contacts-link"
                 href="mailto:info@devstudio.com"
               >
                 <svg class="header__contacts-envelope">
@@ -93,7 +93,7 @@
             </li>
             <li class="header__contacts-item">
               <a
-                class="header__contacts-link animate__animated animate__fadeInBottomRight"
+                class="header__contacts-link"
                 href="tel:+380961111111"
               >
                 <svg class="header-contacts-smartphone">
@@ -106,13 +106,62 @@
         </nav>
       </div>
     </header>
+
+    <!-- header modal  -->
+
+    <!-- <div class="backdrop is-hidden">
+      <div class="header__modal">
+          <button class="header__modal-button" type="button">
+          <svg class="header__modal-button-icon">
+            <use href="./img/symbol-defs.svg#icon-modal-close"></use>
+          </svg>
+          </button>
+
+          <ul class="header__modal-list">
+            <li class="header__modal-item">
+              <a href="" class="header__modal-link">Студія</a>
+            </li>
+            <li class="header__modal-item">
+              <a href="" class="header__modal-link">Портфоліо</a>
+            </li>
+            <li class="header__modal-item">
+              <a href="" class="header__modal-link">Контакти</a>
+            </li>
+          </ul>
+          
+          <ul class="header__modal-contacts-list">
+            <li class="header__modal-contacts-item">
+                <a href="tel:+"380961111111>+38 096 111 11 11</a>
+            </li>
+            <li class="header__modal-contacts-item">
+          <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+          </ul>
+
+          <ul class="header__modal-social-list">
+            <li class="header__modal-social-item">
+              <a href="" class="header__modal-social-link">Instagram</a>
+            </li>
+            <li class="header__modal-social-item">
+              <a href="" class="header__modal-social-link">Twitter</a>
+            </li>
+            <li class="header__modal-social-item">
+              <a href="" class="header__modal-social-link">Facebook</a>
+            </li>
+            <li class="header__modal-social-item">
+              <a href="" class="header__modal-social-link">LinkedIn</a>
+            </li>
+          </ul>
+      </div>
+    </div> -->
+
     <main class="main">
       <section class="hero">
         <div class="container">
-          <h1 class="hero__title animate__animated animate__fadeInDown">
+          <h1  class="hero__title ">
             ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ
           </h1>
-          <button class="hero__button" data-modal-open type="button">
+          <button data-modal-open  class="hero__button" type="button">
             Замовити послугу
           </button>
         </div>
@@ -125,16 +174,11 @@
           <ul class="features__list">
             <li class="features__item features__first">
               <h2
-                data-aos="fade-right"
-                data-aos-duration="500"
                 class="features__text"
               >
                 УВАГА ДО ДЕТАЛЕЙ
               </h2>
               <p
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-easing="ease-in-back"
                 class="features__description"
               >
                 Ідейні міркування, і навіть початок повсякденної роботи з
@@ -144,16 +188,13 @@
 
             <li class="features__item features__second">
               <h2
-                data-aos="fade-down-right"
-                data-aos-duration="500"
+
                 class="features__text"
               >
                 ПУНКТУАЛЬНІСТЬ
               </h2>
               <p
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-easing="ease-in-back"
+
                 class="features__description"
               >
                 Завдання організації, особливо рамки і місце навчання кадрів
@@ -162,16 +203,13 @@
             </li>
             <li class="features__item features__third">
               <h2
-                data-aos="fade-down-left"
-                data-aos-duration="500"
+
                 class="features__text"
               >
                 ПЛАНУВАННЯ
               </h2>
               <p
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-easing="ease-in-back"
+
                 class="features__description"
               >
                 Так само консультація з широким активом значною мірою зумовлює.
@@ -179,16 +217,13 @@
             </li>
             <li class="features__item features__fourth">
               <h2
-                data-aos="fade-left"
-                data-aos-duration="500"
+
                 class="features__text"
               >
                 СУЧАСНІ ТЕХНОЛОГІЇ
               </h2>
               <p
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-easing="ease-in-back"
+
                 class="features__description"
               >
                 Значимість цих проблем настільки очевидна, що реалізація
@@ -203,21 +238,18 @@
 
       <section class="work">
         <div class="container">
-          <h3 data-aos="fade-down" class="work__title">Чим ми займаємося</h3>
+          <h3 class="work__title">Чим ми займаємося</h3>
           <ul class="work__list">
             <li class="work__item">
               <img
-                data-aos="flip-left"
-                data-aos-duration="1000"
+
                 class="work__img"
                 src="./img/1.webp"
                 width="300"
                 alt="Компютер"
               />
               <p
-                data-aos="zoom-out-right"
-                data-aos-delay="100"
-                data-aos-duration="1500"
+
                 class="work__text"
               >
                 Десктопні додатки
@@ -225,17 +257,14 @@
             </li>
             <li class="work__item">
               <img
-                data-aos="flip-down"
-                data-aos-duration="1000"
+
                 class="work__img"
                 src="./img/2.webp"
                 width="300"
                 alt="Компютер"
               />
               <p
-                data-aos="zoom-out-down"
-                data-aos-delay="100"
-                data-aos-duration="1500"
+
                 class="work__text"
               >
                 Мобільні додатки
@@ -243,17 +272,14 @@
             </li>
             <li class="work__item">
               <img
-                data-aos="flip-right"
-                data-aos-duration="1000"
+
                 class="work__img"
                 src="./img/3.webp"
                 width="300"
                 alt="Палітра фарб"
               />
               <p
-                data-aos="zoom-out-left"
-                data-aos-delay="100"
-                data-aos-duration="1500"
+
                 class="work__text"
               >
                 Дизайнерські рішення
@@ -268,17 +294,14 @@
       <section class="team">
         <div class="container">
           <h3
-            data-aos="zoom-out-down"
-            data-aos-duration="2000"
+
             class="team__title"
           >
             Наша команда
           </h3>
           <ul class="team__list">
             <li
-              data-aos="fade-right"
-              data-aos-delay="300"
-              data-aos-duration="1000"
+
               class="team__item"
             >
               <img class="team-img" src="./img/4.webp" alt="Product Designer" />
@@ -317,8 +340,7 @@
               </ul>
             </li>
             <li
-              data-aos="fade-right"
-              data-aos-duration="1000"
+
               class="team__item"
             >
               <img
@@ -361,8 +383,7 @@
               </ul>
             </li>
             <li
-              data-aos="fade-left"
-              data-aos-duration="1000"
+
               class="team__item"
             >
               <img class="team-img" src="./img/6.webp" alt="Marketing" />
@@ -401,9 +422,7 @@
               </ul>
             </li>
             <li
-              data-aos="fade-left"
-              data-aos-delay="300"
-              data-aos-duration="1000"
+
               class="team__item"
             >
               <img
@@ -455,8 +474,7 @@
       <section class="clients">
         <div class="container">
           <h4
-            data-aos="zoom-out-down"
-            data-aos-duration="1000"
+
             class="clients__title"
           >
             Постійні клієнти
@@ -464,9 +482,7 @@
           <ul class="clients__list">
             <li class="clients__item">
               <a
-                data-aos="zoom-in-right"
-                data-aos-delay="300"
-                data-aos-duration="1000"
+
                 href=""
                 class="clients__link"
               >
@@ -477,9 +493,7 @@
             </li>
             <li class="clients__item">
               <a
-                data-aos="zoom-in-right"
-                data-aos-delay="150"
-                data-aos-duration="1000"
+
                 href=""
                 class="clients__link"
               >
@@ -490,8 +504,7 @@
             </li>
             <li class="clients__item">
               <a
-                data-aos="zoom-in-right"
-                data-aos-duration="1000"
+
                 href=""
                 class="clients__link"
               >
@@ -502,8 +515,7 @@
             </li>
             <li class="clients__item">
               <a
-                data-aos="zoom-in-left"
-                data-aos-duration="1000"
+
                 href=""
                 class="clients__link"
               >
@@ -514,9 +526,7 @@
             </li>
             <li class="clients__item">
               <a
-                data-aos="zoom-in-left"
-                data-aos-delay="150"
-                data-aos-duration="1000"
+
                 href=""
                 class="clients__link"
               >
@@ -527,9 +537,7 @@
             </li>
             <li class="clients__item">
               <a
-                data-aos="zoom-in-left"
-                data-aos-delay="300"
-                data-aos-duration="1000"
+
                 href=""
                 class="clients__link"
               >
@@ -548,8 +556,7 @@
       <div class="container">
         <div class="footer__box">
           <div
-            data-aos="fade-right"
-            data-aos-duration="1000"
+
             class="footer__nav"
           >
             <a class="footer__logo" href="./index.html"
@@ -572,11 +579,7 @@
             </ul>
           </div>
 
-          <div
-            data-aos="fade-down-right"
-            data-aos-duration="1000"
-            class="footer__social-box"
-          >
+          <div class="footer__social-box">
             <h3 class="footer__social-title">приєднуйтесь</h3>
             <ul class="footer__social-list">
               <li class="footer__social-item">
@@ -610,10 +613,9 @@
             </ul>
           </div>
 
-          <div class="footer__adapvite">
+          <div class="footer__adaptive">
             <form
-              data-aos="fade-up-right"
-              data-aos-duration="1000"
+
               class="footer__form"
             >
               <label class="footer__lable" for="footer__email"
@@ -714,6 +716,7 @@
         </form>
       </div>
     </div>
+    <!-- <script src="./js/headerModal.js"></script> -->
     <script src="./js/modal.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

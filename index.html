@@ -39,13 +39,13 @@
             >Studio
           </a>
 
-          <button class="header__nav-button">
+          <button data-modal-open class="header__nav-button">
             <svg class="header__nav-svg">
               <use href="./img/symbol-defs.svg#icon-mobile-menu"></use>
             </svg>
           </button>
 
-          <!-- navigations -->
+        
 
           <ul class="header__list">
             <li class="header__item">
@@ -77,7 +77,7 @@
             </li>
           </ul>
 
-          <!-- contacts -->
+       
 
           <ul class="header__contacts-list">
             <li class="header__contacts-item">
@@ -106,54 +106,6 @@
         </nav>
       </div>
     </header>
-
-    <!-- header modal  -->
-
-    <!-- <div class="backdrop is-hidden">
-      <div class="header__modal">
-          <button class="header__modal-button" type="button">
-          <svg class="header__modal-button-icon">
-            <use href="./img/symbol-defs.svg#icon-modal-close"></use>
-          </svg>
-          </button>
-
-          <ul class="header__modal-list">
-            <li class="header__modal-item">
-              <a href="" class="header__modal-link">Студія</a>
-            </li>
-            <li class="header__modal-item">
-              <a href="" class="header__modal-link">Портфоліо</a>
-            </li>
-            <li class="header__modal-item">
-              <a href="" class="header__modal-link">Контакти</a>
-            </li>
-          </ul>
-          
-          <ul class="header__modal-contacts-list">
-            <li class="header__modal-contacts-item">
-                <a href="tel:+"380961111111>+38 096 111 11 11</a>
-            </li>
-            <li class="header__modal-contacts-item">
-          <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-            </li>
-          </ul>
-
-          <ul class="header__modal-social-list">
-            <li class="header__modal-social-item">
-              <a href="" class="header__modal-social-link">Instagram</a>
-            </li>
-            <li class="header__modal-social-item">
-              <a href="" class="header__modal-social-link">Twitter</a>
-            </li>
-            <li class="header__modal-social-item">
-              <a href="" class="header__modal-social-link">Facebook</a>
-            </li>
-            <li class="header__modal-social-item">
-              <a href="" class="header__modal-social-link">LinkedIn</a>
-            </li>
-          </ul>
-      </div>
-    </div> -->
 
     <main class="main">
       <section class="hero">
@@ -642,6 +594,56 @@
         </div>
       </div>
     </footer>
+
+    <!-- header modal  -->
+
+    <div data-modal class="backdrop is-hidden">
+      <div class="header__modal">
+          <button data-modal-close class="header__modal-button" type="button">
+          <svg class="header__modal-button-icon">
+            <use href="./img/symbol-defs.svg#icon-modal-close"></use>
+          </svg>
+          </button>
+
+          <ul class="header__modal-list">
+            <li class="header__modal-item">
+              <a href="" class="header__modal-link">Студія</a>
+            </li>
+            <li class="header__modal-item">
+              <a href="" class="header__modal-link">Портфоліо</a>
+            </li>
+            <li class="header__modal-item">
+              <a href="" class="header__modal-link">Контакти</a>
+            </li>
+          </ul>
+
+          <div>
+          <ul class="header__modal-contacts-list">
+            <li class="header__modal-contacts-item">
+                <a href="tel:+"380961111111>+38 096 111 11 11</a>
+            </li>
+            <li class="header__modal-contacts-item">
+          <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+          </ul>
+
+          <ul class="header__modal-social-list">
+            <li class="header__modal-social-item">
+              <a href="" class="header__modal-social-link">Instagram</a>
+            </li>
+            <li class="header__modal-social-item">
+              <a href="" class="header__modal-social-link">Twitter</a>
+            </li>
+            <li class="header__modal-social-item">
+              <a href="" class="header__modal-social-link">Facebook</a>
+            </li>
+            <li class="header__modal-social-item">
+              <a href="" class="header__modal-social-link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
     <!-- modal window -->
 

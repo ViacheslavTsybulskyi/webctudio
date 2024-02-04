@@ -309,6 +309,7 @@ img {
   left: 0;
   background-color: #FFF;
   display: flex;
+  flex-direction: column;
 }
 @media screen and (min-width: 768px) {
   .header__modal {
@@ -321,14 +322,83 @@ img {
   height: 40px;
   cursor: pointer;
   background-color: #FFF;
-  display: flex;
-  margin-top: 10px;
-  justify-content: end;
+  position: absolute;
+  top: 20px;
+  right: 10px;
 }
 
 .header__modal-button-icon {
   width: 19px;
   height: 19px;
+}
+
+.header__modal-list {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  margin-top: 48px;
+}
+
+.header__modal-link {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 40px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #212121;
+  margin-left: 25px;
+}
+
+.header__modal-link:hover {
+  color: #2196f3;
+}
+
+.header__modal-contacts-box {
+  padding-bottom: 48px;
+  margin-top: auto;
+}
+
+.header__modal-contacts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-left: 24px;
+}
+
+.header__modal-contacts-link {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 24px;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.header__modal-social-list {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 64px;
+}
+
+.header__modal-social-item {
+  display: flex;
+}
+
+.header__modal-social-link {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 122%;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+  position: relative;
+}
+
+.header__modal-social-line {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  width: 1px;
+  height: 22px;
+  margin-left: 10px;
 }
 
 .hero {

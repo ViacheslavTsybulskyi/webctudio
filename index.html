@@ -39,7 +39,7 @@
             >Studio
           </a>
 
-          <button data-modal-open class="header__nav-button">
+          <button data-menu-open class="header__nav-button">
             <svg class="header__nav-svg">
               <use href="./img/symbol-defs.svg#icon-mobile-menu"></use>
             </svg>
@@ -113,7 +113,7 @@
           <h1  class="hero__title ">
             ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ
           </h1>
-          <button data-modal-open  class="hero__button" type="button">
+          <button data-modal-open class="hero__button" type="button">
             Замовити послугу
           </button>
         </div>
@@ -193,45 +193,57 @@
           <h3 class="work__title">Чим ми займаємося</h3>
           <ul class="work__list">
             <li class="work__item">
-              <img
-
+              <picture>
+                <source srcset="./img/desktop/desk-work1@1X.webp 1x, ./img/desktop/desk-work1@2X.webp 2x" media="(min-width: 1200px)" > 
+                <source srcset="./img/laptop/desk-work1@1X.webp 1x, ./img/laptop/desk-work1@2X.webp 2x" media="(min-width: 768px)" > 
+                <source srcset="./img/mobile/desk-work1@1X.webp 1x, ./img/mobile/desk-work1@2X.webp 2x" media="(min-width: 320px)" > 
+                <img
                 class="work__img"
-                src="./img/1.webp"
+                src="./img/desktop/desk-work1@1X.webp"
                 width="300"
                 alt="Компютер"
               />
-              <p
+              </picture>
 
+              <p
                 class="work__text"
               >
                 Десктопні додатки
               </p>
             </li>
             <li class="work__item">
+            <picture>
+              <source srcset="./img/desktop/desk-work2@1X.webp 1x, ./img/desktop/desk-work2@2X.webp 2x" media="(min-width: 1200px)"> 
+              <source srcset="./img/laptop/desk-work2@1X.webp 1x, ./img/laptop/desk-work2@2X.webp 2x" media="(min-width: 768px)"> 
+              <source srcset="./img/mobile/desk-work2@1X.webp 1x, ./img/mobile/desk-work2@2X.webp 2x" media="(min-width: 320px)"> 
               <img
-
                 class="work__img"
-                src="./img/2.webp"
+                src="./img/desktop/desk-work2@1X.webp"
                 width="300"
                 alt="Компютер"
               />
+            </picture>
+              
               <p
-
                 class="work__text"
               >
                 Мобільні додатки
               </p>
             </li>
             <li class="work__item">
-              <img
-
+              <picture>
+                <source srcset="./img/desktop/desk-work3@1X.webp 1x, ./img/desktop/desk-work3@2X.webp 2x" media="(min-width: 1200px)"> 
+                <source srcset="./img/laptop/desk-work3@1X.webp 1x, ./img/laptop/desk-work3@2X.webp 2x" media="(min-width: 768px)"> 
+                <source srcset="./img/mobile/desk-work3@1X.webp 1x, ./img/mobile/desk-work3@2X.webp 2x" media="(min-width: 320px)"> 
+                <img
                 class="work__img"
-                src="./img/3.webp"
+                src="./img/desktop/desk-work3@1X.webp"
                 width="300"
                 alt="Палітра фарб"
               />
+            </picture>
+              
               <p
-
                 class="work__text"
               >
                 Дизайнерські рішення
@@ -256,7 +268,13 @@
 
               class="team__item"
             >
-              <img class="team-img" src="./img/4.webp" alt="Product Designer" />
+            <picture> 
+              <source srcset="./img/desktop/desk-people1@1X.webp 1x, ./img/desktop/desk-people1@2X.webp 2x" media="(min-width: 1200px)"> 
+                <source srcset="./img/laptop/desk-people1@1X.webp 1x, ./img/laptop/desk-people1@2X.webp 2x" media="(min-width: 768px)"> 
+                <source srcset="./img/mobile/desk-people1@1X.webp 1x, ./img/mobile/desk-people1@2X.webp 2x" media="(min-width: 320px)"> 
+              <img class="team-img" src="./img/desktop/desk-people1@1X.webp" alt="Product Designer" />
+            </picture>
+             
               <p class="team__name">Ігор Дем'яненко</p>
               <p class="team__description">Product Designer</p>
 
@@ -295,11 +313,17 @@
 
               class="team__item"
             >
+            <picture>
+              <source srcset="./img/desktop/desk-people2@1X.webp 1x, ./img/desktop/desk-people2@2X.webp 2x" media="(min-width: 1200px)"> 
+              <source srcset="./img/laptop/desk-people2@1X.webp 1x, ./img/laptop/desk-people2@2X.webp 2x" media="(min-width: 768px)"> 
+              <source srcset="./img/mobile/desk-people2@1X.webp 1x, ./img/mobile/desk-people2@2X.webp 2x" media="(min-width: 320px)"> 
               <img
                 class="team-img"
-                src="./img/5.webp"
+                src="./img/desktop/desk-people2@1X.webp"
                 alt="Frontend Developer"
               />
+            </picture>
+              
               <p class="team__name">Ольга Рєпіна</p>
               <p class="team__description">Frontend Developer</p>
 
@@ -338,7 +362,13 @@
 
               class="team__item"
             >
-              <img class="team-img" src="./img/6.webp" alt="Marketing" />
+            <picture>
+              <source srcset="./img/desktop/desk-people3@1X.webp 1x, ./img/desktop/desk-people3@2X.webp 2x" media="(min-width: 1200px)"> 
+              <source srcset="./img/laptop/desk-people3@1X.webp 1x, ./img/laptop/desk-people3@2X.webp 2x" media="(min-width: 768px)"> 
+              <source srcset="./img/mobile/desk-people3@1X.webp 1x, ./img/mobile/desk-people3@2X.webp 2x" media="(min-width: 320px)"> 
+              <img class="team-img" src="./img/desktop/desk-people3@1X.webp" alt="Marketing" />
+            </picture>
+              
               <p class="team__name">Микола Тарасов</p>
               <p class="team__description">Marketing</p>
 
@@ -377,12 +407,18 @@
 
               class="team__item"
             >
+            <picture>
+              <source srcset="./img/desktop/desk-people4@1X.webp 1x, ./img/desktop/desk-people4@2X.webp 2x" media="(min-width: 1200px)"> 
+              <source srcset="./img/laptop/desk-people4@1X.webp 1x, ./img/laptop/desk-people4@2X.webp 2x" media="(min-width: 768px)"> 
+              <source srcset="./img/mobile/desk-people4@1X.webp 1x, ./img/mobile/desk-people4@2X.webp 2x" media="(min-width: 320px)">
               <img
                 class="team-img"
                 src="./img/7.webp"
                 width="300"
                 alt="UI Designer"
               />
+            </picture>
+              
               <p class="team__name">Михайло Єрмаков</p>
               <p class="team__description">UI Designer</p>
 
@@ -597,9 +633,9 @@
 
     <!-- header modal  -->
 
-    <div data-modal class="backdrop is-hidden">
+    <div data-menu class="backdrop is-hidden">
       <div class="header__modal">
-          <button data-modal-close class="header__modal-button" type="button">
+          <button data-menu-close class="header__modal-button" type="button">
           <svg class="header__modal-button-icon">
             <use href="./img/symbol-defs.svg#icon-modal-close"></use>
           </svg>
@@ -723,11 +759,11 @@
         </form>
       </div>
     </div>
-    <!-- <script src="./js/headerModal.js"></script> -->
     <script src="./js/modal.js"></script>
+    <script src="./js/header-modal.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
+    <!-- <script>
       AOS.init();
-    </script>
+    </script> -->
   </body>
 </html>

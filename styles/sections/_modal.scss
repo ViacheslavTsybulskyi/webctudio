@@ -30,13 +30,9 @@
     position: relative;
     @include transition(opacity);
 
-    @media screen and (min-width: 320px) {
-        display: none;
-    }
-
     @media screen and (min-width: 768px) {
         max-width: 450px;
-        display: block;
+       
     }
 
     @media screen and (min-width: 1200px) {

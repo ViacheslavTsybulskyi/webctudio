@@ -402,7 +402,7 @@ img {
 }
 
 .hero {
-  background: linear-gradient(to right, rgba(47, 48, 58, 0.4) 40%, rgba(47, 48, 58, 0.4) 40%), url(../../img/main-bg.webp);
+  background: linear-gradient(to right, rgba(47, 48, 58, 0.4) 40%, rgba(47, 48, 58, 0.4) 40%), url(../../img/desktop/desk-main-bg@1X.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -531,16 +531,16 @@ img {
   }
 }
 .features__first::before {
-  background-image: url(../../img/features-antenna.webp);
+  background-image: url(../../img/desktop/desk-antenna@1X.webp);
 }
 .features__second::before {
-  background-image: url(../../img/features-clock.webp);
+  background-image: url(../../img/desktop/desk-clock@1X.webp);
 }
 .features__third::before {
-  background-image: url(../../img/features-computer.webp);
+  background-image: url(../../img/desktop/desk-diagram@1X.webp);
 }
 .features__fourth::before {
-  background-image: url(../../img/features-man.webp);
+  background-image: url(../../img/desktop/desk-astronaut@1X.webp);
 }
 .features__text {
   font-family: "Roboto";
@@ -891,15 +891,9 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width: 320px) {
-  .modal {
-    display: none;
-  }
-}
 @media screen and (min-width: 768px) {
   .modal {
     max-width: 450px;
-    display: block;
   }
 }
 @media screen and (min-width: 1200px) {

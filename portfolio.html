@@ -18,28 +18,21 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./dist/css/portfolio.min.css">
+    <link rel="stylesheet" href="./dist/css/portfolio.min.css" />
   </head>
   <body>
     <header class="header">
       <div class="container">
         <nav class="header__nav">
-          <a
-            class="header__logo-link"
-            href="./index.html"
-          >
-            <span class="header__logo-color"
-              >Web</span
-            >Studio
+          <a class="header__logo-link" href="./index.html">
+            <span class="header__logo-color">Web</span>Studio
           </a>
 
-          <button data-modal-open class="header__nav-button">
+          <button data-menu-open class="header__nav-button">
             <svg class="header__nav-svg">
               <use href="./img/symbol-defs.svg#icon-mobile-menu"></use>
             </svg>
           </button>
-
-        
 
           <ul class="header__list">
             <li class="header__item">
@@ -71,14 +64,9 @@
             </li>
           </ul>
 
-       
-
           <ul class="header__contacts-list">
             <li class="header__contacts-item">
-              <a
-                class="header__contacts-link"
-                href="mailto:info@devstudio.com"
-              >
+              <a class="header__contacts-link" href="mailto:info@devstudio.com">
                 <svg class="header__contacts-envelope">
                   <use href="./img/symbol-defs.svg#icon-envelope"></use>
                 </svg>
@@ -86,10 +74,7 @@
               </a>
             </li>
             <li class="header__contacts-item">
-              <a
-                class="header__contacts-link"
-                href="tel:+380961111111"
-              >
+              <a class="header__contacts-link" href="tel:+380961111111">
                 <svg class="header-contacts-smartphone">
                   <use href="./img/symbol-defs.svg#icon-smartphone"></use>
                 </svg>
@@ -120,185 +105,383 @@
             <button class="hero__button" type="button">Маркетенг</button>
           </li>
         </ul>
-        
+
         <ul class="hero__card-list">
           <li class="hero__card-item">
             <a class="hero__card-link" href="">
               <picture>
-                <source srcset="./img/desktop/desk-portfolio-img1@1X.webp 1x, ./img/desktop/desk-portfolio-img1@2X.webp 2x" media="(min-width: 1200px)"> 
-                <source srcset="./img/laptop/lap-portfolio-img1@1X.webp 1x, ./img/laptop/lap-portfolio-img1@2X.webp 2x" media="(min-width: 768px)"> 
-                <source srcset="./img/mobile/mob-portfolio-img1@1X.webp 1x, ./img/mobile/mob-portfolio-img1@2X.webp 2x" media="(min-width: 320px)">
+                <source
+                  srcset="
+                    ./img/desktop/desk-portfolio-img1@1X.webp 1x,
+                    ./img/desktop/desk-portfolio-img1@2X.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/laptop/lap-portfolio-img1@1X.webp 1x,
+                    ./img/laptop/lap-portfolio-img1@2X.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./img/mobile/mob-portfolio-img1@1X.webp 1x,
+                    ./img/mobile/mob-portfolio-img1@2X.webp 2x
+                  "
+                  media="(min-width: 320px)"
+                />
                 <img
-                class="hero__card-img"
-                src="./img/desktop/desk-portfolio-img1@2X.webp"
-                alt="Веб-сайт, Технокряк"
-              />
+                  class="hero__card-img"
+                  src="./img/desktop/desk-portfolio-img1@2X.webp"
+                  alt="Веб-сайт, Технокряк"
+                />
               </picture>
-              
+
               <h4 class="hero__card-name">Технокряк</h4>
               <p class="hero__card-text">Веб-сайт</p>
               <div class="hero__card-overlay">
-                <p class="hero__card-subtitle">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                <p class="hero__card-subtitle">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем
+                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                  вичерпні відомості про компанію чи приватну особу.
+                </p>
               </div>
             </a>
           </li>
           <li class="hero__card-item">
             <a class="hero__card-link" href="">
               <picture>
-                <source srcset="./img/desktop/desk-portfolio-img2@1X.webp 1x, ./img/desktop/desk-portfolio-img2@2X.webp 2x" media="(min-width: 1200px)"> 
-                <source srcset="./img/laptop/lap-portfolio-img2@1X.webp 1x, ./img/laptop/lap-portfolio-img2@2X.webp 2x" media="(min-width: 768px)"> 
-                <source srcset="./img/mobile/mob-portfolio-img2@1X.webp 1x, ./img/mobile/mob-portfolio-img2@2X.webp 2x" media="(min-width: 320px)">
+                <source
+                  srcset="
+                    ./img/desktop/desk-portfolio-img2@1X.webp 1x,
+                    ./img/desktop/desk-portfolio-img2@2X.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/laptop/lap-portfolio-img2@1X.webp 1x,
+                    ./img/laptop/lap-portfolio-img2@2X.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./img/mobile/mob-portfolio-img2@1X.webp 1x,
+                    ./img/mobile/mob-portfolio-img2@2X.webp 2x
+                  "
+                  media="(min-width: 320px)"
+                />
                 <img
-                class="hero__card-img"
-                src="./img/desktop/desk-portfolio-img2@1X.webp"
-                alt="Дизайн, Постер New Orlean vs Golden Star "
-              />
+                  class="hero__card-img"
+                  src="./img/desktop/desk-portfolio-img2@1X.webp"
+                  alt="Дизайн, Постер New Orlean vs Golden Star "
+                />
               </picture>
-              
+
               <h4 class="hero__card-name">Постер New Orlean vs Golden Star</h4>
               <p class="hero__card-text">Дизайн</p>
               <div class="hero__card-overlay">
-                <p class="hero__card-subtitle">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                <p class="hero__card-subtitle">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем
+                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                  вичерпні відомості про компанію чи приватну особу.
+                </p>
               </div>
             </a>
           </li>
           <li class="hero__card-item">
             <a class="hero__card-link" href="">
               <picture>
-                <source srcset="./img/desktop/desk-portfolio-img3@1X.webp 1x, ./img/desktop/desk-portfolio-img3@2X.webp 2x" media="(min-width: 1200px)"> 
-                <source srcset="./img/laptop/lap-portfolio-img3@1X.webp 1x, ./img/laptop/lap-portfolio-img3@2X.webp 2x" media="(min-width: 768px)"> 
-                <source srcset="./img/mobile/mob-portfolio-img3@1X.webp 1x, ./img/mobile/mob-portfolio-img3@2X.webp 2x" media="(min-width: 320px)">
+                <source
+                  srcset="
+                    ./img/desktop/desk-portfolio-img3@1X.webp 1x,
+                    ./img/desktop/desk-portfolio-img3@2X.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/laptop/lap-portfolio-img3@1X.webp 1x,
+                    ./img/laptop/lap-portfolio-img3@2X.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./img/mobile/mob-portfolio-img3@1X.webp 1x,
+                    ./img/mobile/mob-portfolio-img3@2X.webp 2x
+                  "
+                  media="(min-width: 320px)"
+                />
                 <img
-                class="hero__card-img"
-                src="./img/desktop/desk-portfolio-img3@1X.webp"
-                alt="Додаток, Ресторан Seafood"
-              />
+                  class="hero__card-img"
+                  src="./img/desktop/desk-portfolio-img3@1X.webp"
+                  alt="Додаток, Ресторан Seafood"
+                />
               </picture>
-              
+
               <h4 class="hero__card-name">Ресторан Seafood</h4>
               <p class="hero__card-text">Додаток</p>
               <div class="hero__card-overlay">
-                <p class="hero__card-subtitle">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                <p class="hero__card-subtitle">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем
+                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                  вичерпні відомості про компанію чи приватну особу.
+                </p>
               </div>
             </a>
           </li>
           <li class="hero__card-item">
             <a class="hero__card-link" href="">
               <picture>
-                <source srcset="./img/desktop/desk-portfolio-img4@1X.webp 1x, ./img/desktop/desk-portfolio-img4@2X.webp 2x" media="(min-width: 1200px)"> 
-                <source srcset="./img/laptop/lap-portfolio-img4@1X.webp 1x, ./img/laptop/lap-portfolio-img4@2X.webp 2x" media="(min-width: 768px)"> 
-                <source srcset="./img/mobile/mob-portfolio-img4@1X.webp 1x, ./img/mobile/mob-portfolio-img4@2X.webp 2x" media="(min-width: 320px)">
+                <source
+                  srcset="
+                    ./img/desktop/desk-portfolio-img4@1X.webp 1x,
+                    ./img/desktop/desk-portfolio-img4@2X.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/laptop/lap-portfolio-img4@1X.webp 1x,
+                    ./img/laptop/lap-portfolio-img4@2X.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./img/mobile/mob-portfolio-img4@1X.webp 1x,
+                    ./img/mobile/mob-portfolio-img4@2X.webp 2x
+                  "
+                  media="(min-width: 320px)"
+                />
                 <img
-                class="hero__card-img"
-                src="./img/desktop/desk-portfolio-img4@1X.webp"
-                alt="Маркетинг, Проєкт Prime"
-              />
+                  class="hero__card-img"
+                  src="./img/desktop/desk-portfolio-img4@1X.webp"
+                  alt="Маркетинг, Проєкт Prime"
+                />
               </picture>
-              
+
               <h4 class="hero__card-name">Проєкт Prime</h4>
               <p class="hero__card-text">Маркетинг</p>
               <div class="hero__card-overlay">
-                <p class="hero__card-subtitle">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                <p class="hero__card-subtitle">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем
+                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                  вичерпні відомості про компанію чи приватну особу.
+                </p>
               </div>
             </a>
           </li>
           <li class="hero__card-item">
             <a class="hero__card-link" href="">
               <picture>
-                <source srcset="./img/desktop/desk-portfolio-img5@1X.webp 1x, ./img/desktop/desk-portfolio-img5@2X.webp 2x" media="(min-width: 1200px)"> 
-                <source srcset="./img/laptop/lap-portfolio-img5@1X.webp 1x, ./img/laptop/lap-portfolio-img5@2X.webp 2x" media="(min-width: 768px)"> 
-                <source srcset="./img/mobile/mob-portfolio-img5@1X.webp 1x, ./img/mobile/mob-portfolio-img5@2X.webp 2x" media="(min-width: 320px)">
+                <source
+                  srcset="
+                    ./img/desktop/desk-portfolio-img5@1X.webp 1x,
+                    ./img/desktop/desk-portfolio-img5@2X.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/laptop/lap-portfolio-img5@1X.webp 1x,
+                    ./img/laptop/lap-portfolio-img5@2X.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./img/mobile/mob-portfolio-img5@1X.webp 1x,
+                    ./img/mobile/mob-portfolio-img5@2X.webp 2x
+                  "
+                  media="(min-width: 320px)"
+                />
                 <img
-                class="hero__card-img"
-                src="./img/desktop/desk-portfolio-img5@1X.webp"
-                alt="Додаток, Проєкт Boxes"
-              />
+                  class="hero__card-img"
+                  src="./img/desktop/desk-portfolio-img5@1X.webp"
+                  alt="Додаток, Проєкт Boxes"
+                />
               </picture>
-              
+
               <h4 class="hero__card-name">Проєкт Boxes</h4>
               <p class="hero__card-text">Додаток</p>
               <div class="hero__card-overlay">
-                <p class="hero__card-subtitle">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                <p class="hero__card-subtitle">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем
+                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                  вичерпні відомості про компанію чи приватну особу.
+                </p>
               </div>
             </a>
           </li>
           <li class="hero__card-item">
             <a class="hero__card-link" href="">
               <picture>
-                <source srcset="./img/desktop/desk-portfolio-img6@1X.webp 1x, ./img/desktop/desk-portfolio-img6@2X.webp 2x" media="(min-width: 1200px)"> 
-                <source srcset="./img/laptop/lap-portfolio-img6@1X.webp 1x, ./img/laptop/lap-portfolio-img6@2X.webp 2x" media="(min-width: 768px)"> 
-                <source srcset="./img/mobile/mob-portfolio-img6@1X.webp 1x, ./img/mobile/mob-portfolio-img6@2X.webp 2x" media="(min-width: 320px)">
-                 <img
-                class="hero__card-img"
-                src="./img/desktop/desk-portfolio-img6@1X.webp"
-                alt="Веб-сайт, Inspiration has no Borders"
-              />
+                <source
+                  srcset="
+                    ./img/desktop/desk-portfolio-img6@1X.webp 1x,
+                    ./img/desktop/desk-portfolio-img6@2X.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/laptop/lap-portfolio-img6@1X.webp 1x,
+                    ./img/laptop/lap-portfolio-img6@2X.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./img/mobile/mob-portfolio-img6@1X.webp 1x,
+                    ./img/mobile/mob-portfolio-img6@2X.webp 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  class="hero__card-img"
+                  src="./img/desktop/desk-portfolio-img6@1X.webp"
+                  alt="Веб-сайт, Inspiration has no Borders"
+                />
               </picture>
-             
+
               <h4 class="hero__card-name">Inspiration has no Borders</h4>
               <p class="hero__card-text">Веб-сайт</p>
               <div class="hero__card-overlay">
-                <p class="hero__card-subtitle">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                <p class="hero__card-subtitle">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем
+                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                  вичерпні відомості про компанію чи приватну особу.
+                </p>
               </div>
             </a>
           </li>
           <li class="hero__card-item">
             <a class="hero__card-link" href="">
               <picture>
-                <source srcset="./img/desktop/desk-portfolio-img7@1X.webp 1x, ./img/desktop/desk-portfolio-img7@2X.webp 2x" media="(min-width: 1200px)"> 
-                <source srcset="./img/laptop/lap-portfolio-img7@1X.webp 1x, ./img/laptop/lap-portfolio-img7@2X.webp 2x" media="(min-width: 768px)"> 
-                <source srcset="./img/mobile/mob-portfolio-img7@1X.webp 1x, ./img/mobile/mob-portfolio-img7@2X.webp 2x" media="(min-width: 320px)">
+                <source
+                  srcset="
+                    ./img/desktop/desk-portfolio-img7@1X.webp 1x,
+                    ./img/desktop/desk-portfolio-img7@2X.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/laptop/lap-portfolio-img7@1X.webp 1x,
+                    ./img/laptop/lap-portfolio-img7@2X.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./img/mobile/mob-portfolio-img7@1X.webp 1x,
+                    ./img/mobile/mob-portfolio-img7@2X.webp 2x
+                  "
+                  media="(min-width: 320px)"
+                />
                 <img
-                class="hero__card-img"
-                src="./img/desktop/desk-portfolio-img7@1X.webp"
-                alt="Дизайн, Видання Limited Edition"
-              />
+                  class="hero__card-img"
+                  src="./img/desktop/desk-portfolio-img7@1X.webp"
+                  alt="Дизайн, Видання Limited Edition"
+                />
               </picture>
-              
+
               <h4 class="hero__card-name">Видання Limited Edition</h4>
               <p class="hero__card-text">Дизайн</p>
-            <div class="hero__card-overlay">
-              <p class="hero__card-subtitle">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
-            </div>
-          </a>
+              <div class="hero__card-overlay">
+                <p class="hero__card-subtitle">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем
+                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                  вичерпні відомості про компанію чи приватну особу.
+                </p>
+              </div>
+            </a>
           </li>
           <li class="hero__card-item">
             <a class="hero__card-link" href="">
               <picture>
-                <source srcset="./img/desktop/desk-portfolio-img8@1X.webp 1x, ./img/desktop/desk-portfolio-img8@2X.webp 2x" media="(min-width: 1200px)"> 
-                <source srcset="./img/laptop/lap-portfolio-img8@1X.webp 1x, ./img/laptop/lap-portfolio-img8@2X.webp 2x" media="(min-width: 768px)"> 
-                <source srcset="./img/mobile/mob-portfolio-img8@1X.webp 1x, ./img/mobile/mob-portfolio-img8@2X.webp 2x" media="(min-width: 320px)">
+                <source
+                  srcset="
+                    ./img/desktop/desk-portfolio-img8@1X.webp 1x,
+                    ./img/desktop/desk-portfolio-img8@2X.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/laptop/lap-portfolio-img8@1X.webp 1x,
+                    ./img/laptop/lap-portfolio-img8@2X.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./img/mobile/mob-portfolio-img8@1X.webp 1x,
+                    ./img/mobile/mob-portfolio-img8@2X.webp 2x
+                  "
+                  media="(min-width: 320px)"
+                />
                 <img
-                class="hero__card-img"
-                src="./img/desktop/desk-portfolio-img8@1X.webp"
-                alt="Маркетинг, Проєкт LAB"
-              />
+                  class="hero__card-img"
+                  src="./img/desktop/desk-portfolio-img8@1X.webp"
+                  alt="Маркетинг, Проєкт LAB"
+                />
               </picture>
-              
+
               <h4 class="hero__card-name">Проєкт LAB</h4>
               <p class="hero__card-text">Маркетинг</p>
               <div class="hero__card-overlay">
-                <p class="hero__card-subtitle">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                <p class="hero__card-subtitle">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем
+                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                  вичерпні відомості про компанію чи приватну особу.
+                </p>
               </div>
             </a>
           </li>
           <li class="hero__card-item">
             <a class="hero__card-link" href="">
               <picture>
-                <source srcset="./img/desktop/desk-portfolio-img9@1X.webp 1x, ./img/desktop/desk-portfolio-img9@2X.webp 2x" media="(min-width: 1200px)"> 
-                <source srcset="./img/laptop/lap-portfolio-img9@1X.webp 1x, ./img/laptop/lap-portfolio-img9@2X.webp 2x" media="(min-width: 768px)"> 
-                <source srcset="./img/mobile/mob-portfolio-img9@1X.webp 1x, ./img/mobile/mob-portfolio-img9@2X.webp 2x" media="(min-width: 320px)">
+                <source
+                  srcset="
+                    ./img/desktop/desk-portfolio-img9@1X.webp 1x,
+                    ./img/desktop/desk-portfolio-img9@2X.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/laptop/lap-portfolio-img9@1X.webp 1x,
+                    ./img/laptop/lap-portfolio-img9@2X.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./img/mobile/mob-portfolio-img9@1X.webp 1x,
+                    ./img/mobile/mob-portfolio-img9@2X.webp 2x
+                  "
+                  media="(min-width: 320px)"
+                />
                 <img
-                class="hero__card-img"
-                src="./img/desktop/desk-portfolio-img9@1X.webp"
-                alt="Додаток, Growing Business"
-              />
+                  class="hero__card-img"
+                  src="./img/desktop/desk-portfolio-img9@1X.webp"
+                  alt="Додаток, Growing Business"
+                />
               </picture>
-              
+
               <h4 class="hero__card-name">Growing Business</h4>
               <p class="hero__card-text">Додаток</p>
               <div class="hero__card-overlay">
-                <p class="hero__card-subtitle">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                <p class="hero__card-subtitle">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем
+                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                  вичерпні відомості про компанію чи приватну особу.
+                </p>
               </div>
             </a>
           </li>
@@ -308,14 +491,18 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__box">
-          <div data-aos="fade-right" data-aos-duration="1000" class="footer__nav">
+          <div
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            class="footer__nav"
+          >
             <a class="footer__logo" href="./index.html"
               ><span class="footer__logo-color">Web</span>Studio</a
             >
             <address class="footer__address">
               м. Київ, пр-т Лесі Українки, 26
             </address>
-            <ul  class="footer__list">
+            <ul class="footer__list">
               <li class="footer__item">
                 <a href="mailto:info@devstudio.com" class="footer__link"
                   >info@devstudio.com</a
@@ -329,7 +516,11 @@
             </ul>
           </div>
 
-          <div data-aos="fade-down-right" data-aos-duration="1000" class="footer__social-box">
+          <div
+            data-aos="fade-down-right"
+            data-aos-duration="1000"
+            class="footer__social-box"
+          >
             <h3 class="footer__social-title">приєднуйтесь</h3>
             <ul class="footer__social-list">
               <li class="footer__social-item">
@@ -363,7 +554,11 @@
             </ul>
           </div>
 
-          <form data-aos="fade-up-right" data-aos-duration="1000" class="footer__form">
+          <form
+            data-aos="fade-up-right"
+            data-aos-duration="1000"
+            class="footer__form"
+          >
             <label class="footer__lable" for="footer__email"
               >Підпишіться на розсилку</label
             >
@@ -388,22 +583,24 @@
       </div>
     </footer>
 
-     <!-- header modal  -->
+    <!-- header modal  -->
 
-     <div data-modal class="backdrop is-hidden">
+    <div data-menu class="backdrop is-hidden">
       <div class="header__modal">
-          <button data-modal-close class="header__modal-button" type="button">
+        <button data-menu-close class="header__modal-button" type="button">
           <svg class="header__modal-button-icon">
             <use href="./img/symbol-defs.svg#icon-modal-close"></use>
           </svg>
-          </button>
-          <div class="header__modal-box">
+        </button>
+        <div class="header__modal-box">
           <ul class="header__modal-list">
             <li class="header__modal-item">
               <a href="./index.html" class="header__modal-link">Студія</a>
             </li>
             <li class="header__modal-item">
-              <a href="./portfolio.html" class="header__modal-link">Портфоліо</a>
+              <a href="./portfolio.html" class="header__modal-link"
+                >Портфоліо</a
+              >
             </li>
             <li class="header__modal-item">
               <a href="#" class="header__modal-link">Контакти</a>
@@ -411,13 +608,19 @@
           </ul>
         </div>
 
-          <div class="header__modal-contacts-box">
+        <div class="header__modal-contacts-box">
           <ul class="header__modal-contacts-list">
             <li class="header__modal-contacts-item">
-                <a class="header__modal-contacts-link" href="tel:+"380961111111>+38 096 111 11 11</a>
+              <a class="header__modal-contacts-link" href="tel:+" 380961111111
+                >+38 096 111 11 11</a
+              >
             </li>
             <li class="header__modal-contacts-item">
-          <a class="header__modal-contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              <a
+                class="header__modal-contacts-link"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
             </li>
           </ul>
 
@@ -442,5 +645,6 @@
         </div>
       </div>
     </div>
+    <script src="./js/header-modal.js"></script>
   </body>
 </html>

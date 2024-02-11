@@ -30,6 +30,7 @@
         background-color: rgb(245, 244, 250);
         background-position: center;
         background-repeat: no-repeat;
+        background-size: 70px 70px;
         margin-bottom: 30px;
         margin-right: auto;
         margin-left: auto;
@@ -45,19 +46,107 @@
     }
 
     &__first::before {
+        background-image: url(../../img/mobile/mob-antena@1X.webp);
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../../img/mobile/mob-antena@2X.webp);
+      }
+    
+      @media screen and (min-width: 768px) {
+        background-image: url(../../img/laptop/lap-antenna@1X.webpa);
+        @media (min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+          background-image: url(../../img/laptop/lap-antenna@2X.webp);
+        }
+      }
+      @media screen and (min-width: 1200px) {
         background-image: url(../../img/desktop/desk-antenna@1X.webp);
+        @media (min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+          background-image: url(../../img/desktop/desk-antenna@2X.webp);
+        }
+      }
     }
     
     &__second::before {
+        background-image: url(../../img/mobile/mob-clock@1X.webp);
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../../img/mobile/mob-clock@2X.webp);
+      }
+    
+      @media screen and (min-width: 768px) {
+        background-image: url(../../img/laptop/lap-clock@1X.webp);
+        @media (min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+          background-image: url(../../img/laptop/lap-clock@2X.webp);
+        }
+      }
+      @media screen and (min-width: 1200px) {
         background-image: url(../../img/desktop/desk-clock@1X.webp);
+        @media (min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+          background-image: url(../../img/desktop/desk-clock@2X.webp);
+        }
+      }
     }
     
     &__third::before {
+        background-image: url(../../img/mobile/mob-diagram@1X.webp);
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../../img/mobile/mob-diagram@2X.webp);
+      }
+    
+      @media screen and (min-width: 768px) {
+        background-image: url(../../img/laptop/lap-diagram@1X.webp);
+        @media (min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+          background-image: url(../../img/laptop/lap-diagram@2X.webp);
+        }
+      }
+      @media screen and (min-width: 1200px) {
         background-image: url(../../img/desktop/desk-diagram@1X.webp);
+        @media (min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+          background-image: url(../../img/desktop/desk-diagram@2X.webp);
+        }
+      }
     }
     
     &__fourth::before {
+        background-image: url(../../img/mobile/mob-astronaut@1X.webp);
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../../img/mobile/mob-astronaut@2X.webp);
+      }
+    
+      @media screen and (min-width: 768px) {
+        background-image: url(../../img/laptop/lap-astronaut@1X.webp);
+        @media (min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+          background-image: url(../../img/laptop/lap-astronaut@2X.webp);
+        }
+      }
+      @media screen and (min-width: 1200px) {
         background-image: url(../../img/desktop/desk-astronaut@1X.webp);
+        @media (min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+          background-image: url(../../img/desktop/desk-astronaut@2X.webp);
+        }
+      }
     }
 
     &__text {

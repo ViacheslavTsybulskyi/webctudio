@@ -301,6 +301,29 @@ img {
   fill: #1296F3;
 }
 
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition-property: opacity visibility;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
 .header__modal {
   position: absolute;
   top: 0;
@@ -402,7 +425,7 @@ img {
 }
 
 .hero {
-  background: linear-gradient(to right, rgba(47, 48, 58, 0.4) 40%, rgba(47, 48, 58, 0.4) 40%), url(../../img/desktop/desk-main-bg@1X.webp);
+  background: linear-gradient(to right, rgba(47, 48, 58, 0.4) 40%, rgba(47, 48, 58, 0.4) 40%), url(../../img/mobile/mob-main-bg@1X.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -414,6 +437,31 @@ img {
   margin-right: auto;
   margin-bottom: auto;
   margin-left: auto;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background: linear-gradient(to right, rgba(47, 48, 58, 0.4) 40%, rgba(47, 48, 58, 0.4) 40%), url(../../img/mobile/mob-main-bg@2X.webp);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4) 40%, rgba(47, 48, 58, 0.4) 40%), url(../../img/laptop/lap-main-bg@1X.webp);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background: linear-gradient(to right, rgba(47, 48, 58, 0.4) 40%, rgba(47, 48, 58, 0.4) 40%), url(../../img/laptop/lap-main-bg@2X.webp);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    background: linear-gradient(to right, rgba(47, 48, 58, 0.4) 40%, rgba(47, 48, 58, 0.4) 40%), url(../../img/desktop/desk-main-bg@1X.webp);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background: linear-gradient(to right, rgba(47, 48, 58, 0.4) 40%, rgba(47, 48, 58, 0.4) 40%), url(../../img/desktop/desk-main-bg@2X.webp);
+  }
 }
 .hero__title {
   text-transform: uppercase;
@@ -515,6 +563,7 @@ img {
   background-color: rgb(245, 244, 250);
   background-position: center;
   background-repeat: no-repeat;
+  background-size: 70px 70px;
   margin-bottom: 30px;
   margin-right: auto;
   margin-left: auto;
@@ -531,16 +580,116 @@ img {
   }
 }
 .features__first::before {
-  background-image: url(../../img/desktop/desk-antenna@1X.webp);
+  background-image: url(../../img/mobile/mob-antena@1X.webp);
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .features__first::before {
+    background-image: url(../../img/mobile/mob-antena@2X.webp);
+  }
+}
+@media screen and (min-width: 768px) {
+  .features__first::before {
+    background-image: url(../../img/laptop/lap-antenna@1X.webpa);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .features__first::before {
+    background-image: url(../../img/laptop/lap-antenna@2X.webp);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features__first::before {
+    background-image: url(../../img/desktop/desk-antenna@1X.webp);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .features__first::before {
+    background-image: url(../../img/desktop/desk-antenna@2X.webp);
+  }
 }
 .features__second::before {
-  background-image: url(../../img/desktop/desk-clock@1X.webp);
+  background-image: url(../../img/mobile/mob-clock@1X.webp);
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .features__second::before {
+    background-image: url(../../img/mobile/mob-clock@2X.webp);
+  }
+}
+@media screen and (min-width: 768px) {
+  .features__second::before {
+    background-image: url(../../img/laptop/lap-clock@1X.webp);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .features__second::before {
+    background-image: url(../../img/laptop/lap-clock@2X.webp);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features__second::before {
+    background-image: url(../../img/desktop/desk-clock@1X.webp);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .features__second::before {
+    background-image: url(../../img/desktop/desk-clock@2X.webp);
+  }
 }
 .features__third::before {
-  background-image: url(../../img/desktop/desk-diagram@1X.webp);
+  background-image: url(../../img/mobile/mob-diagram@1X.webp);
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .features__third::before {
+    background-image: url(../../img/mobile/mob-diagram@2X.webp);
+  }
+}
+@media screen and (min-width: 768px) {
+  .features__third::before {
+    background-image: url(../../img/laptop/lap-diagram@1X.webp);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .features__third::before {
+    background-image: url(../../img/laptop/lap-diagram@2X.webp);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features__third::before {
+    background-image: url(../../img/desktop/desk-diagram@1X.webp);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .features__third::before {
+    background-image: url(../../img/desktop/desk-diagram@2X.webp);
+  }
 }
 .features__fourth::before {
-  background-image: url(../../img/desktop/desk-astronaut@1X.webp);
+  background-image: url(../../img/mobile/mob-astronaut@1X.webp);
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .features__fourth::before {
+    background-image: url(../../img/mobile/mob-astronaut@2X.webp);
+  }
+}
+@media screen and (min-width: 768px) {
+  .features__fourth::before {
+    background-image: url(../../img/laptop/lap-astronaut@1X.webp);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .features__fourth::before {
+    background-image: url(../../img/laptop/lap-astronaut@2X.webp);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features__fourth::before {
+    background-image: url(../../img/desktop/desk-astronaut@1X.webp);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .features__fourth::before {
+    background-image: url(../../img/desktop/desk-astronaut@2X.webp);
+  }
 }
 .features__text {
   font-family: "Roboto";

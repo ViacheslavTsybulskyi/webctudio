@@ -1,8 +1,32 @@
 .hero {
-    background: linear-gradient(to right, rgba(47, 48, 58, 0.40) 40%, rgba(47, 48, 58, 0.40) 40%), url(../../img/desktop/desk-main-bg@1X.webp);
-    background-repeat: no-repeat;
+
+    background: linear-gradient(to right, rgba(47, 48, 58, 0.40) 40%, rgba(47, 48, 58, 0.40) 40%), url(../../img/mobile/mob-main-bg@1X.webp);
+       background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+     @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        
+    background: linear-gradient(to right, rgba(47, 48, 58, 0.40) 40%, rgba(47, 48, 58, 0.40) 40%), url(../../img/mobile/mob-main-bg@2X.webp);
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.40) 40%, rgba(47, 48, 58, 0.40) 40%), url(../../img/laptop/lap-main-bg@1X.webp);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background: linear-gradient(to right, rgba(47, 48, 58, 0.40) 40%, rgba(47, 48, 58, 0.40) 40%), url(../../img/laptop/lap-main-bg@2X.webp);
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    background: linear-gradient(to right, rgba(47, 48, 58, 0.40) 40%, rgba(47, 48, 58, 0.40) 40%), url(../../img/desktop/desk-main-bg@1X.webp);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background: linear-gradient(to right, rgba(47, 48, 58, 0.40) 40%, rgba(47, 48, 58, 0.40) 40%), url(../../img/desktop/desk-main-bg@2X.webp);
+    }
+  }
     @include padding-section(200px, auto, 200px, auto);
     @include margin();
 
